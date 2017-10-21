@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "airtable": "^0.5.0",
+    "github": "^11.0.0",
+    "lodash": "^4.17.4",
+    "node-github": "^0.0.3",
+    "octokit": "^0.10.4",
+    "octonode": "^0.9.1"
+  }
+}
