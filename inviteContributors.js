@@ -2,10 +2,7 @@
 const keys = require("./keys.json");
 const GitHubApi = require("github");
 const _ = require("lodash");
-const github = new GitHubApi({
-  // optional
-  // debug: true
-});
+const github = new GitHubApi({});
 github.authenticate({
   type: "token",
   token: keys.github
@@ -26,8 +23,6 @@ function searchIssues(page, cbk) {
     );
   });
 }
-
-let users = [];
 
 async function getMembers(user) {
   const teams = await github.orgs.getTeams({
@@ -90,12 +85,4 @@ async function inviteContributors() {
   }
 }
 
-async function stuff() {
-  // const b = await getAuthors();
-  const b = await github.users.getForUser({ username: "belld19233" });
-  console.log(b);
-}
-
-stuff();
-// inviteContributors();
-// console.log(authors);
+inviteContributors();
