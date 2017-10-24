@@ -1,3 +1,13 @@
+/*
+Query is a deprecated script w/ some useful functions
+
+* findIssue - an airtable search function
+* query - an airtable function for finding records that match a predicate
+* create
+* update
+
+*/
+
 const keys = require("./keys.json");
 
 var Airtable = require("airtable");

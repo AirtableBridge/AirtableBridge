@@ -1,3 +1,10 @@
+/*
+getAuthors is a deprecated script used to get the list of authors and members
+* authors were a search over the commits
+* members were a search over the gh teams
+
+*/
+
 // const Octokit = require("Octokit");
 const keys = require("./keys.json");
 const GitHubApi = require("github");

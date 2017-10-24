@@ -16,29 +16,6 @@ Airtable.configure({
 
 var base = Airtable.base("appwQO7nufXMVj4ge");
 
-function formatDate(date) {
-  if (!date) {
-    return null;
-  }
-
-  const d = new Date(date);
-  return `${d.getMonth() + 1}/${d.getDate()}/${d.getYear()}`;
-}
-
-function getCommitFields(commit) {
-  const { author: { login }, sha, commit: { message }, html_url } = commit;
-  const committer = commit.committer.login;
-  const date = commit.commit.committer ? commit.commit.committer.date : null;
-  return {
-    Author: login,
-    Sha: sha,
-    Message: message,
-    Url: html_url,
-    Committer: committer,
-    Date: formatDate(date)
-  };
-}
-
 async function getCommits() {
   let commitList = [];
 

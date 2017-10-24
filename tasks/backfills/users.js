@@ -51,19 +51,6 @@ function createUser(user) {
   });
 }
 
-function getUserFields(user) {
-  const { login, html_url, location, avatar_url, name, company, email } = user;
-  return {
-    Login: login,
-    Avatar: [{ url: avatar_url }],
-    Profile: html_url,
-    Email: email,
-    Location: location,
-    Company: company,
-    Name: name
-  };
-}
-
 function fetchUser(login) {
   return github.users.getForUser({ username: login });
 }

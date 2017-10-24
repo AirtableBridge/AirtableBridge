@@ -1,3 +1,11 @@
+/*
+# Invite Contributors
+
+It's goal is to get all of the existing team members and send invites
+to users who have made a contribution.
+
+*/
+
 // const Octokit = require("Octokit");
 const keys = require("./keys.json");
 const GitHubApi = require("github");
