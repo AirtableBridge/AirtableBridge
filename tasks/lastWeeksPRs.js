@@ -1,41 +1,113 @@
+const _ = require("lodash");
 const { authenticate, query } = require("../airtable");
 const airtable = authenticate();
+const dedent = require("dedent");
+const getPRScreenshots = require("../github/getPRScreenshots");
+
+async function getPRs() {
+  const records = await airtable("Pulls")
+    .select({
+      filterByFormula: "",
+      view: "Last Week's PRs"
+    })
+    .all();
+
+  return records.map(r => r._rawJson.fields);
+}
+
+function createSection(prs, label) {
+  const sectionPrs = prs.filter(pr => getLabel(pr) == label);
+  const prList = sectionPrs.map(pr => `+ [${pr.Title}][${pr.ID}]`);
+  const attachments = _.flatten(
+    sectionPrs.map(pr =>
+      pr.attachments.map((attachment, index) => `![${pr.ID}-${index}]`)
+    )
+  );
+  return dedent`
+    ### ${label}
+
+    ...
+
+    ${prList.join("\n")}
+
+    ${attachments.join("\n")}
+  `;
+}
+
+function getLabel(pr) {
+  return pr.Label2 || pr.Label;
+}
+
+function createSections(prs) {
+  const labels = _.uniq(prs.map(getLabel));
+  return labels.map(label => createSection(prs, label)).join("\n\n");
+}
+
+function getVariables(prs) {
+  const prVars = prs.map(pr => `[${pr.ID}]: ${pr.Url}`);
+  const authorVars = getAuthors(prs).map(
+    author => `[${author}]: https://github.com/${author}`
+  );
+  const screenShots = _.flatten(
+    prs.map(pr =>
+      pr.attachments.map(
+        (attachment, index) => `[${pr.ID}-${index}]: ${attachment}`
+      )
+    )
+  );
+
+  return dedent`
+    ${screenShots.join("\n")}
+    ${prVars.join("\n")}
+    ${authorVars.join("\n")}
+  `;
+}
+
+function getAuthors(prs) {
+  return _.uniq(prs.map(pr => pr.Author));
+}
+
+function getHeader(prs) {
+  const authors = getAuthors(prs).map(author => `[${author}]`);
+  return dedent`
+    ## October 24th
+
+    ...
+
+    ${authors.join(", ")}
+  `;
+}
+
+async function mapPRs(prs) {
+  return Promise.all(
+    prs.map(async pr => {
+      const attachments = await getPRScreenshots(pr.ID);
+      return {
+        ...pr,
+        label: pr.Label2 || pr.Label,
+        attachments
+      };
+    })
+  );
+}
+
+function post(prs) {
+  console.log(dedent`
+    ${getHeader(prs)}
+
+    ${createSections(prs)}
+
+    ${getVariables(prs)}
+  `);
+}
 
 (async () => {
-  const records = await query(airtable, {
-    table: "Pulls",
-    view: "Pulls",
-    formula: ""
-  });
-
-  console.log(
-    records.map(r => `${r.get("ID")} - ${r.get("Merged")} - ${r.get("Title")}`)
-  );
+  let prs = await getPRs();
+  prs = await mapPRs(prs);
+  // console.log(prs.map(pr => pr.attachments.length));
+  post(prs);
 })();
 
-[
-  "4442 - 2017-10-20 - bump yarn",
-  "4441 - 2017-10-21 - Blackboxed sources distinguished by icon in source tree ",
-  "4447 - 2017-10-20 - The second 10/13 release",
-  '4416 - 2017-10-18 - Revert "Use a monospace font for editor line numbers"',
-  "4427 - 2017-10-23 - Fixes 3846 Source Tabs and Gutter Column Don't Line Up",
-  "4404 - 2017-10-17 - Cleanup babel",
-  "4473 - 2017-10-23 - fix #4471 - expand the right sidebar on pausing at breakpoint",
-  "4467 - 2017-10-23 - Highlight errors in editor",
-  "4468 - 2017-10-23 - Differentiate between computed and uncomputed member expressions",
-  "4448 - 2017-10-20 - Undo string change to editor.addConditionalBreakpoint",
-  "4414 - 2017-10-17 - Update mochii to the latest version 🚀",
-  "4477 - 2017-10-23 - Converted Source Tree SVG's (including Blackbox) to images using CSS styles (#4350)",
-  "4476 - 2017-10-23 - Add Next.js to framework frames",
-  "4474 - 2017-10-23 - Fix footer background length in dark theme",
-  "4458 - 2017-10-21 - support framework frames for Aframe #2980",
-  "4340 - 2017-10-10 - Fixed issue #4291",
-  "4323 - 2017-10-11 - add a GotoLineModal",
-  "4337 - 2017-10-10 - Align empty message in Source Tab",
-  "4327 - 2017-10-09 - Use Flow for Proptype checking in Source Tree",
-  "4332 - 2017-10-11 - Upgrade Launchpad",
-  "4347 - 2017-10-11 - fix browser toolbox issues",
-  "4335 - 2017-10-10 - Update travis MC commit",
-  '4330 - 2017-10-09 - - unifies right click "Copy source URI" for tree view & tab view (#4325)',
-  "4339 - 2017-10-10 - Remove last vestige of devtools.debugger.client-source-maps-enabled"
-];
+process.on("unhandledRejection", (reason, p) => {
+  console.log(reason);
+});

@@ -1,4 +1,13 @@
 module.exports = async function query(airtable, data) {
+  const results = await airtable(data.table)
+    .select({
+      filterByFormula: data.formula || "",
+      view: data.view
+    })
+    .all();
+};
+
+async function query(airtable, data) {
   return new Promise(async (resolve, reject) => {
     let records = [];
     function page(records, fetchNextPage) {
@@ -26,4 +35,4 @@ module.exports = async function query(airtable, data) {
 
     results.eachPage(page, done);
   });
-};
+}
