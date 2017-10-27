@@ -107,21 +107,25 @@ async function mapPRs(prs) {
 }
 
 function post(prs) {
-  console.log(dedent`
+  const text = dedent`
     ${getHeader(prs)}
 
     ${createSections(prs)}
 
     ${getVariables(prs)}
-  `);
-}
+  `;
 
-(async () => {
-  let prs = await getPRs();
-  // console.log(prs.map(pr => pr.attachments.length));
-  post(prs);
-})();
+  return text;
+}
 
 process.on("unhandledRejection", (reason, p) => {
   console.log(reason);
 });
+
+// (async () => {
+//   let prs = await getPRs();
+//   // console.log(prs.map(pr => pr.attachments.length));
+//   post(prs);
+// })();
+
+module.exports = { post, getPRs };

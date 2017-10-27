@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lastWeeksPRs simple 1`] = `
+"## October 24th
+
+...
+
+[@jselmani], [@joel-bentley], [@pradeepgangwar], [@leibale], [@jainsneha23], [@bomsy], [@nyrosmith], [@jasonLaster]
+
+### Performance
+
+...
+
++ [Converted Source Tree SVG's (including Blackbox) to images using CSS styles (#4350)][4477] [@jselmani]
+
+![4477-0]
+
+### Frameworks
+
+...
+
++ [Add Next.js to framework frames][4476] [@joel-bentley]
+
+![4476-0]
+
+### UI Polish
+
+...
+
++ [Fix footer background length in dark theme][4474] [@pradeepgangwar]
++ [fix #4471 - expand the right sidebar on pausing at breakpoint][4473] [@leibale]
++ [Only show one contextmenu at a time][4470] [@jainsneha23]
+
+![4474-0]
+
+### Bug
+
+...
+
++ [Support previewing computed object keys][4468] [@bomsy]
+
+### Feature
+
+...
+
++ [Highlight errors in editor][4467] [@nyrosmith]
+
+### Docs
+
+...
+
++ [Fix link issues in docs ][4462] [@pradeepgangwar]
+
+### Infrastructure
+
+...
+
++ [bump yarn][4442] [@jasonLaster]
+
+[4477-0]: https://user-images.githubusercontent.com/25250594/31919381-05a0d198-b830-11e7-9166-900c414882fa.PNG
+[4476-0]: https://user-images.githubusercontent.com/10087880/31913734-579249a6-b848-11e7-9fcc-6f6592560d2d.png
+[4474-0]: https://user-images.githubusercontent.com/21259802/31912450-93ebdd72-b861-11e7-8bff-4404caf2ddbe.png
+[4477]: https://github.com/devtools-html/debugger.html/pull/4477
+[4476]: https://github.com/devtools-html/debugger.html/pull/4476
+[4474]: https://github.com/devtools-html/debugger.html/pull/4474
+[4473]: https://github.com/devtools-html/debugger.html/pull/4473
+[4470]: https://github.com/devtools-html/debugger.html/pull/4470
+[4468]: https://github.com/devtools-html/debugger.html/pull/4468
+[4467]: https://github.com/devtools-html/debugger.html/pull/4467
+[4462]: https://github.com/devtools-html/debugger.html/pull/4462
+[4442]: https://github.com/devtools-html/debugger.html/pull/4442
+[@jselmani]: https://github.com/jselmani
+[@joel-bentley]: https://github.com/joel-bentley
+[@pradeepgangwar]: https://github.com/pradeepgangwar
+[@leibale]: https://github.com/leibale
+[@jainsneha23]: https://github.com/jainsneha23
+[@bomsy]: https://github.com/bomsy
+[@nyrosmith]: https://github.com/nyrosmith
+[@jasonLaster]: https://github.com/jasonLaster"
+`;
