@@ -17,7 +17,7 @@ async function screenShots(id) {
   const bodies = comments.data.map(comment => comment.body);
 
   const text = [body].concat(bodies).join("\n");
-  const attachments = text.match(/(https:\/\/\S*?\.(JPG|PNG|jpg|png))/);
+  const attachments = text.match(/(https:\/\/\S*?\.(JPG|jpg|PNG|png|GIF|gif))/);
   let screens = attachments ? attachments.slice(0, attachments.length) : [];
   screens = _.uniq(screens.filter(screen => screen.includes("http")));
 
