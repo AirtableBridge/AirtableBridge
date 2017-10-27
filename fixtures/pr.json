@@ -1,0 +1,413 @@
+{
+  "url": "https://api.github.com/repos/devtools-html/debugger.html/pulls/4478",
+  "id": 148276821,
+  "html_url": "https://github.com/devtools-html/debugger.html/pull/4478",
+  "diff_url": "https://github.com/devtools-html/debugger.html/pull/4478.diff",
+  "patch_url": "https://github.com/devtools-html/debugger.html/pull/4478.patch",
+  "issue_url":
+    "https://api.github.com/repos/devtools-html/debugger.html/issues/4478",
+  "number": 4478,
+  "state": "open",
+  "locked": false,
+  "title": "Setup breakpoint dropdown",
+  "user": {
+    "login": "GarethSharpe",
+    "id": 22062107,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/22062107?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/GarethSharpe",
+    "html_url": "https://github.com/GarethSharpe",
+    "followers_url": "https://api.github.com/users/GarethSharpe/followers",
+    "following_url":
+      "https://api.github.com/users/GarethSharpe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/GarethSharpe/gists{/gist_id}",
+    "starred_url":
+      "https://api.github.com/users/GarethSharpe/starred{/owner}{/repo}",
+    "subscriptions_url":
+      "https://api.github.com/users/GarethSharpe/subscriptions",
+    "organizations_url": "https://api.github.com/users/GarethSharpe/orgs",
+    "repos_url": "https://api.github.com/users/GarethSharpe/repos",
+    "events_url": "https://api.github.com/users/GarethSharpe/events{/privacy}",
+    "received_events_url":
+      "https://api.github.com/users/GarethSharpe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "body":
+    "Associated Issue: #4410 \r\n\r\n### Summary of Changes\r\n\r\n* Created breakpoint dropdown styling \r\n* Breakpoint toggle returns dropdown\r\n* Changed dropdown .svg to \"+\"\r\n\r\nExample test plan:\r\n\r\n- [x] Create an arbitrary breakpoint\r\n- [x] Breakpoint window displays panel toggle \r\n- [x] Clicking “+” opens the panel\r\n\r\nTODO:\r\n* Adjust dropdown width to fit parent\r\n* Add menu items (with corresponding images)\r\n* Add menu item implementation\r\n* Remove CommandBar options as needed",
+  "created_at": "2017-10-24T01:21:40Z",
+  "updated_at": "2017-10-24T01:24:23Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "milestone": null,
+  "commits_url":
+    "https://api.github.com/repos/devtools-html/debugger.html/pulls/4478/commits",
+  "review_comments_url":
+    "https://api.github.com/repos/devtools-html/debugger.html/pulls/4478/comments",
+  "review_comment_url":
+    "https://api.github.com/repos/devtools-html/debugger.html/pulls/comments{/number}",
+  "comments_url":
+    "https://api.github.com/repos/devtools-html/debugger.html/issues/4478/comments",
+  "statuses_url":
+    "https://api.github.com/repos/devtools-html/debugger.html/statuses/8f6b30984b8fbd07cb468b1cb92111551682f8c8",
+  "head": {
+    "label": "GarethSharpe:master",
+    "ref": "master",
+    "sha": "8f6b30984b8fbd07cb468b1cb92111551682f8c8",
+    "user": {
+      "login": "GarethSharpe",
+      "id": 22062107,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/22062107?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GarethSharpe",
+      "html_url": "https://github.com/GarethSharpe",
+      "followers_url": "https://api.github.com/users/GarethSharpe/followers",
+      "following_url":
+        "https://api.github.com/users/GarethSharpe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GarethSharpe/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/GarethSharpe/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/GarethSharpe/subscriptions",
+      "organizations_url": "https://api.github.com/users/GarethSharpe/orgs",
+      "repos_url": "https://api.github.com/users/GarethSharpe/repos",
+      "events_url":
+        "https://api.github.com/users/GarethSharpe/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/GarethSharpe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "repo": {
+      "id": 104511652,
+      "name": "debugger.html",
+      "full_name": "GarethSharpe/debugger.html",
+      "owner": {
+        "login": "GarethSharpe",
+        "id": 22062107,
+        "avatar_url": "https://avatars1.githubusercontent.com/u/22062107?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GarethSharpe",
+        "html_url": "https://github.com/GarethSharpe",
+        "followers_url": "https://api.github.com/users/GarethSharpe/followers",
+        "following_url":
+          "https://api.github.com/users/GarethSharpe/following{/other_user}",
+        "gists_url":
+          "https://api.github.com/users/GarethSharpe/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/GarethSharpe/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/GarethSharpe/subscriptions",
+        "organizations_url": "https://api.github.com/users/GarethSharpe/orgs",
+        "repos_url": "https://api.github.com/users/GarethSharpe/repos",
+        "events_url":
+          "https://api.github.com/users/GarethSharpe/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/GarethSharpe/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "private": false,
+      "html_url": "https://github.com/GarethSharpe/debugger.html",
+      "description": "The Firefox debugger that works anywhere  :boom:",
+      "fork": true,
+      "url": "https://api.github.com/repos/GarethSharpe/debugger.html",
+      "forks_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/forks",
+      "keys_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/keys{/key_id}",
+      "collaborators_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/collaborators{/collaborator}",
+      "teams_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/teams",
+      "hooks_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/hooks",
+      "issue_events_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/issues/events{/number}",
+      "events_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/events",
+      "assignees_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/assignees{/user}",
+      "branches_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/branches{/branch}",
+      "tags_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/tags",
+      "blobs_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/git/blobs{/sha}",
+      "git_tags_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/git/tags{/sha}",
+      "git_refs_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/git/refs{/sha}",
+      "trees_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/git/trees{/sha}",
+      "statuses_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/statuses/{sha}",
+      "languages_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/languages",
+      "stargazers_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/stargazers",
+      "contributors_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/contributors",
+      "subscribers_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/subscribers",
+      "subscription_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/subscription",
+      "commits_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/commits{/sha}",
+      "git_commits_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/git/commits{/sha}",
+      "comments_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/comments{/number}",
+      "issue_comment_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/issues/comments{/number}",
+      "contents_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/contents/{+path}",
+      "compare_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/compare/{base}...{head}",
+      "merges_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/merges",
+      "archive_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/{archive_format}{/ref}",
+      "downloads_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/downloads",
+      "issues_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/issues{/number}",
+      "pulls_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/pulls{/number}",
+      "milestones_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/milestones{/number}",
+      "notifications_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/notifications{?since,all,participating}",
+      "labels_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/labels{/name}",
+      "releases_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/releases{/id}",
+      "deployments_url":
+        "https://api.github.com/repos/GarethSharpe/debugger.html/deployments",
+      "created_at": "2017-09-22T19:33:12Z",
+      "updated_at": "2017-09-22T19:33:15Z",
+      "pushed_at": "2017-10-23T23:17:40Z",
+      "git_url": "git://github.com/GarethSharpe/debugger.html.git",
+      "ssh_url": "git@github.com:GarethSharpe/debugger.html.git",
+      "clone_url": "https://github.com/GarethSharpe/debugger.html.git",
+      "svn_url": "https://github.com/GarethSharpe/debugger.html",
+      "homepage": "https://devtools-html.github.io/debugger.html/",
+      "size": 11506,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": false,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": false,
+      "has_pages": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "open_issues_count": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "master"
+    }
+  },
+  "base": {
+    "label": "devtools-html:master",
+    "ref": "master",
+    "sha": "eb88cf3e0899d2316f4df8847e99ed06017a91e0",
+    "user": {
+      "login": "devtools-html",
+      "id": 19979421,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/19979421?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/devtools-html",
+      "html_url": "https://github.com/devtools-html",
+      "followers_url": "https://api.github.com/users/devtools-html/followers",
+      "following_url":
+        "https://api.github.com/users/devtools-html/following{/other_user}",
+      "gists_url": "https://api.github.com/users/devtools-html/gists{/gist_id}",
+      "starred_url":
+        "https://api.github.com/users/devtools-html/starred{/owner}{/repo}",
+      "subscriptions_url":
+        "https://api.github.com/users/devtools-html/subscriptions",
+      "organizations_url": "https://api.github.com/users/devtools-html/orgs",
+      "repos_url": "https://api.github.com/users/devtools-html/repos",
+      "events_url":
+        "https://api.github.com/users/devtools-html/events{/privacy}",
+      "received_events_url":
+        "https://api.github.com/users/devtools-html/received_events",
+      "type": "Organization",
+      "site_admin": false
+    },
+    "repo": {
+      "id": 54585418,
+      "name": "debugger.html",
+      "full_name": "devtools-html/debugger.html",
+      "owner": {
+        "login": "devtools-html",
+        "id": 19979421,
+        "avatar_url": "https://avatars2.githubusercontent.com/u/19979421?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/devtools-html",
+        "html_url": "https://github.com/devtools-html",
+        "followers_url": "https://api.github.com/users/devtools-html/followers",
+        "following_url":
+          "https://api.github.com/users/devtools-html/following{/other_user}",
+        "gists_url":
+          "https://api.github.com/users/devtools-html/gists{/gist_id}",
+        "starred_url":
+          "https://api.github.com/users/devtools-html/starred{/owner}{/repo}",
+        "subscriptions_url":
+          "https://api.github.com/users/devtools-html/subscriptions",
+        "organizations_url": "https://api.github.com/users/devtools-html/orgs",
+        "repos_url": "https://api.github.com/users/devtools-html/repos",
+        "events_url":
+          "https://api.github.com/users/devtools-html/events{/privacy}",
+        "received_events_url":
+          "https://api.github.com/users/devtools-html/received_events",
+        "type": "Organization",
+        "site_admin": false
+      },
+      "private": false,
+      "html_url": "https://github.com/devtools-html/debugger.html",
+      "description": "The Firefox debugger that works anywhere  :boom:",
+      "fork": false,
+      "url": "https://api.github.com/repos/devtools-html/debugger.html",
+      "forks_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/forks",
+      "keys_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/keys{/key_id}",
+      "collaborators_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/collaborators{/collaborator}",
+      "teams_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/teams",
+      "hooks_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/hooks",
+      "issue_events_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/issues/events{/number}",
+      "events_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/events",
+      "assignees_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/assignees{/user}",
+      "branches_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/branches{/branch}",
+      "tags_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/tags",
+      "blobs_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/git/blobs{/sha}",
+      "git_tags_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/git/tags{/sha}",
+      "git_refs_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/git/refs{/sha}",
+      "trees_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/git/trees{/sha}",
+      "statuses_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/statuses/{sha}",
+      "languages_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/languages",
+      "stargazers_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/stargazers",
+      "contributors_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/contributors",
+      "subscribers_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/subscribers",
+      "subscription_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/subscription",
+      "commits_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/commits{/sha}",
+      "git_commits_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/git/commits{/sha}",
+      "comments_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/comments{/number}",
+      "issue_comment_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/issues/comments{/number}",
+      "contents_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/contents/{+path}",
+      "compare_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/compare/{base}...{head}",
+      "merges_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/merges",
+      "archive_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/{archive_format}{/ref}",
+      "downloads_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/downloads",
+      "issues_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/issues{/number}",
+      "pulls_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/pulls{/number}",
+      "milestones_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/milestones{/number}",
+      "notifications_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/notifications{?since,all,participating}",
+      "labels_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/labels{/name}",
+      "releases_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/releases{/id}",
+      "deployments_url":
+        "https://api.github.com/repos/devtools-html/debugger.html/deployments",
+      "created_at": "2016-03-23T18:55:36Z",
+      "updated_at": "2017-10-24T11:32:49Z",
+      "pushed_at": "2017-10-24T13:46:17Z",
+      "git_url": "git://github.com/devtools-html/debugger.html.git",
+      "ssh_url": "git@github.com:devtools-html/debugger.html.git",
+      "clone_url": "https://github.com/devtools-html/debugger.html.git",
+      "svn_url": "https://github.com/devtools-html/debugger.html",
+      "homepage": "https://devtools-html.github.io/debugger.html/",
+      "size": 12731,
+      "stargazers_count": 2972,
+      "watchers_count": 2972,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": false,
+      "has_pages": true,
+      "forks_count": 436,
+      "mirror_url": null,
+      "archived": false,
+      "open_issues_count": 209,
+      "forks": 436,
+      "open_issues": 209,
+      "watchers": 2972,
+      "default_branch": "master"
+    }
+  },
+  "_links": {
+    "self": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/pulls/4478"
+    },
+    "html": {
+      "href": "https://github.com/devtools-html/debugger.html/pull/4478"
+    },
+    "issue": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/issues/4478"
+    },
+    "comments": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/issues/4478/comments"
+    },
+    "review_comments": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/pulls/4478/comments"
+    },
+    "review_comment": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/pulls/comments{/number}"
+    },
+    "commits": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/pulls/4478/commits"
+    },
+    "statuses": {
+      "href":
+        "https://api.github.com/repos/devtools-html/debugger.html/statuses/8f6b30984b8fbd07cb468b1cb92111551682f8c8"
+    }
+  },
+  "author_association": "CONTRIBUTOR"
+}

@@ -1,0 +1,1324 @@
+[
+  {
+    "ID": 4477,
+    "Title": "Converted Source Tree SVG's (including Blackbox) to images using CSS styles (#4350)",
+    "Author": "jselmani",
+    "Created": "2017-10-23",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #4350 \r\n\r\nConverted the Source Tree SVG's to images using CSS styles.  This also includes the newly added Blackbox SVG.\r\n\r\n### Screenshots\r\n#### Firefox\r\n![firefox](https://user-images.githubusercontent.com/25250594/31919381-05a0d198-b830-11e7-9166-900c414882fa.PNG)\r\n\r\n#### Chrome\r\n![chrome](https://user-images.githubusercontent.com/25250594/31919384-0caa58ec-b830-11e7-8df5-513de67d9847.PNG)\r\n\r\n",
+    "Branch": "jselmani:Issue4350SourceTreeWithBlackbox",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4477",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "attW92g0Q49HIIhQ2",
+        "url": "https://dl.airtable.com/qpLu4Zn4TMyRl6Q3yGLx_25250594",
+        "filename": "25250594",
+        "size": 138489,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/sQ2OpDIdRQG5joGnVwJx_small_25250594",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/zNrgfXDOT6uiimhCBymw_large_25250594",
+            "width": 276,
+            "height": 276
+          }
+        }
+      }
+    ],
+    "Label": "Performance",
+    "label": "Performance",
+    "attachments": [
+      "https://user-images.githubusercontent.com/25250594/31919381-05a0d198-b830-11e7-9166-900c414882fa.PNG"
+    ]
+  },
+  {
+    "ID": 4476,
+    "Title": "Add Next.js to framework frames",
+    "Author": "joel-bentley",
+    "Created": "2017-10-23",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #2980 \r\n\r\n### Summary of Changes\r\n\r\n* Add Next.js support to Framework Frames\r\n\r\n### Test Plan\r\n\r\n- [x] Run the debugger locally\r\n- [x] Debug https://zeit.co/\r\n\r\n### Screenshot\r\n<img width=\"309\" alt=\"screen shot 2017-10-23 at 11 16 02 pm\" src=\"https://user-images.githubusercontent.com/10087880/31913734-579249a6-b848-11e7-9fcc-6f6592560d2d.png\">\r\n",
+    "Branch": "joel-bentley:frames-add-nextjs",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4476",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "attWI5KNWjNtpHRlO",
+        "url": "https://dl.airtable.com/ECyAOT30QpCdzQNJMkg6_10087880",
+        "filename": "10087880",
+        "size": 25218,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/BnPrEAR9ScSYmgyd9vEA_small_10087880",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/IxHCFcOfToG6eoAMTF7T_large_10087880",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "Frameworks",
+    "label": "Frameworks",
+    "attachments": [
+      "https://user-images.githubusercontent.com/10087880/31913734-579249a6-b848-11e7-9fcc-6f6592560d2d.png"
+    ]
+  },
+  {
+    "ID": 4474,
+    "Title": "Fix footer background length in dark theme",
+    "Author": "pradeepgangwar",
+    "Created": "2017-10-23",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #4421 \r\n\r\n### Summary of Changes\r\n\r\n* changed some CSS files.\r\n\r\n### Screenshots\r\n\r\n![screenshot-2017-10-23 debugger](https://user-images.githubusercontent.com/21259802/31912450-93ebdd72-b861-11e7-8bff-4404caf2ddbe.png)\r\n\r\n",
+    "Branch": "pradeepgangwar:issue-4421",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4474",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "attCGhzJukTnPOy2T",
+        "url": "https://dl.airtable.com/KkBKFSK9RVSvzuBoHkxg_21259802",
+        "filename": "21259802",
+        "size": 17296,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/2lFvn90QROp4mogrppBP_small_21259802",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/k1kCeQJTRiyMnug5trTJ_large_21259802",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "Label2": "UI Polish",
+    "label": "UI Polish",
+    "attachments": [
+      "https://user-images.githubusercontent.com/21259802/31912450-93ebdd72-b861-11e7-8bff-4404caf2ddbe.png"
+    ]
+  },
+  {
+    "ID": 4473,
+    "Title": "fix #4471 - expand the right sidebar on pausing at breakpoint",
+    "Author": "leibale",
+    "Created": "2017-10-23",
+    "Updated": "2017-10-24",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #4471\r\n\r\n### Summary of Changes\r\n\r\n*  Expand the right sidebar on pausing at breakpoint\r\n\r\n### Test Plan\r\n\r\nTell us a little a bit about how you tested your patch.\r\n\r\nExample test plan:\r\n\r\n- [x] Close the right sidebar.\r\n- [x] Create new breakpoint.\r\n- [x] Check if the right sidebar opens when the breakpoint pause.",
+    "Branch": "leibale:expend-the-right-sidebar-on-pause-at-breakpoint",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4473",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "attWMLrt6GFNmKy6d",
+        "url": "https://dl.airtable.com/mPWBVZKER86vsm7xypnN_7086055",
+        "filename": "7086055",
+        "size": 1525,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/fj3wJibSkSv0oIRLpKh7_small_7086055",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/sWAe7r9bTICHN7Yop9EF_large_7086055",
+            "width": 420,
+            "height": 420
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "UI Polish",
+    "label": "UI Polish",
+    "attachments": []
+  },
+  {
+    "ID": 4470,
+    "Title": "Only show one contextmenu at a time",
+    "Author": "jainsneha23",
+    "Created": "2017-10-23",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #4469 \r\n\r\n### Summary of Changes\r\n\r\n* Added event stopPropagation and prevent default to context menu event\r\n\r\n### Test Plan\r\n\r\n- [x] open editor window\r\n- [x] right click inside the text\r\n- [x] 1 context menu appear (debugger)\r\n\r\n### Screenshots/Videos (OPTIONAL)\r\n\r\n![4469](https://user-images.githubusercontent.com/8366397/31889996-4cbc1ecc-b81f-11e7-99f8-b7522abffd4b.gif)\r\n",
+    "Branch": "jainsneha23:bug-4469",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4470",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "att5Sw2qmAKRAfm5G",
+        "url": "https://dl.airtable.com/2liLsihQVm9ItveeYeTw_8366397",
+        "filename": "8366397",
+        "size": 19585,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/l4NWwYaqTNSos4jOAXdU_small_8366397",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/dPOs1XVaRly6YmsM9Rdn_large_8366397",
+            "width": 300,
+            "height": 300
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "Label2": "UI Polish",
+    "label": "UI Polish",
+    "attachments": []
+  },
+  {
+    "ID": 4468,
+    "Title": "Support previewing computed object keys",
+    "Author": "bomsy",
+    "Created": "2017-10-22",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "\r\nAssociated Issue: #4020\r\n\r\n### Summary of Changes\r\n\r\n* Add the computed property to the member expression objects returned from getSymbols\r\n* Differentiate computed from un-computed memberexpressions\r\n\r\nExample test plan:\r\n\r\n- [x] Debug todomvc example\r\n- [x] open `backbone.js` and set a breakpoint on line 223\r\n- [x] Refresh the debuggee (which hits the breakpoint)\r\n- [x] Hover over `id` in `listeningTo[id] = obj`\r\n- [x] It should show `l2`\r\n\r\n### Screenshots/Videos \r\n\r\n#### Before\r\n\r\n![](http://g.recordit.co/lYnPnwioJe.gif)\r\n\r\n#### After\r\n\r\n![](http://g.recordit.co/4kuM7Vr09f.gif)\r\n",
+    "Branch": "bomsy:computed-member-expressions",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4468",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "attFWoOQSwkP2Su9K",
+        "url": "https://dl.airtable.com/jytzI2CpRGi0E1BI8Y7y_792924",
+        "filename": "792924",
+        "size": 25202,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/gCukZ0zTcbDf2pfdWmQT_small_792924",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/dlCPOpmTRnuE62u6mpQG_large_792924",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "label": "Bug",
+    "attachments": []
+  },
+  {
+    "ID": 4467,
+    "Title": "Highlight errors in editor",
+    "Author": "nyrosmith",
+    "Created": "2017-10-22",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #3112 \r\nI closed https://github.com/devtools-html/debugger.html/pull/4439 because after the editor refactoring I wasn't able to merge/rebase anymore.\r\n\r\n![highlight_editor_error](https://user-images.githubusercontent.com/2511026/31862855-5ad67b4a-b745-11e7-8b63-32d91694e80d.gif)\r\n",
+    "Branch": "nyrosmith:highlight_editor_errors",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4467",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "att0wqoRI5LX3Urp3",
+        "url": "https://dl.airtable.com/pU2NNHlPQkCjyGTlA1uM_2511026",
+        "filename": "2511026",
+        "size": 29541,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/xKeo4q4hTc6byg6WNNTQ_small_2511026",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/aay66tZvQeWoRWzJGwDI_large_2511026",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "label": "Feature",
+    "attachments": []
+  },
+  {
+    "ID": 4462,
+    "Title": "Fix link issues in docs ",
+    "Author": "pradeepgangwar",
+    "Created": "2017-10-21",
+    "Updated": "2017-10-21",
+    "Merged": "2017-10-21",
+    "Description": "Associated Issue: #4455 \r\n\r\n### Summary of Changes\r\n\r\n* Fixed Link issues in [getting setup](http://firefox-dev.tools/debugger.html/docs/getting-setup.html) page. Corrected Link [here](http://pradeepgangwar.tech/debugger.html/docs/getting-setup.html)\r\n* Fixed Link issues in [debugging the debugger](http://firefox-dev.tools/debugger.html/docs/debugging-the-debugger.html) page. Corrected Link [here](http://pradeepgangwar.tech/debugger.html/docs/debugging-the-debugger.html)\r\n",
+    "Branch": "pradeepgangwar:gh-pages",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4462",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "attt5E6adq75Us4JW",
+        "url": "https://dl.airtable.com/KkBKFSK9RVSvzuBoHkxg_21259802",
+        "filename": "21259802",
+        "size": 17296,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/2lFvn90QROp4mogrppBP_small_21259802",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/k1kCeQJTRiyMnug5trTJ_large_21259802",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Docs",
+    "label": "Docs",
+    "attachments": []
+  },
+  {
+    "ID": 4460,
+    "Title": "Add nuxt framework to stacktraces",
+    "Author": "stefanjudis",
+    "Created": "2017-10-21",
+    "Updated": "2017-10-21",
+    "Merged": "2017-10-21",
+    "Description": "Associated Issue: #2980\r\n\r\nHere's the Pull Request Doc\r\nhttps://devtools-html.github.io/debugger.html/CONTRIBUTING.html#pull-requests\r\n\r\n### Summary of Changes\r\n\r\nAdd detection of the Nuxt.js framework which uses generated files that are based in a `.nuxt` or `_nuxt` folder (depended on executed command) and also add the needed SVG logo.\r\n\r\n### Test Plan\r\n\r\nI kicked off my local dev environment for stefanjudis.com and placed a debugger in nuxt.js code. To see the stack trace.\r\n\r\n### Screenshots/Videos (OPTIONAL)\r\n\r\n<img width=\"309\" alt=\"screen shot 2017-10-21 at 16 20 38\" src=\"https://user-images.githubusercontent.com/962099/31852673-202297dc-b67c-11e7-9b0e-4f59d466d1c8.png\">\r\n",
+    "Branch": "stefanjudis:add-nuxt-framework-to-stacktraces",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4460",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "attae3He8C7ILjy36",
+        "url": "https://dl.airtable.com/BwsJV1WR2q5buxOHjPi0_962099",
+        "filename": "962099",
+        "size": 34893,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/wNyYNi8gS0KX1sRsYLO7_small_962099",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/FabnbRvzRRSd445RfxY0_large_962099",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "Frameworks",
+    "label": "Frameworks",
+    "attachments": [
+      "https://user-images.githubusercontent.com/962099/31852673-202297dc-b67c-11e7-9b0e-4f59d466d1c8.png"
+    ]
+  },
+  {
+    "ID": 4458,
+    "Title": "support framework frames for Aframe #2980",
+    "Author": "rameramwe",
+    "Created": "2017-10-21",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-21",
+    "Description": "![aframe](https://user-images.githubusercontent.com/17526866/31852285-64cc8b88-b675-11e7-8ae1-2b01f74174f2.png)\r\n",
+    "Branch": "rameramwe:Mission-openSource-Alpha",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4458",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "attFL8f7PHPgggu39",
+        "url": "https://dl.airtable.com/NYAoclffQ7a5vviqKyjs_17526866",
+        "filename": "17526866",
+        "size": 17878,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/jEpQ7dWwTeuU6SeU06U0_small_17526866",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/EmA2OAFThK6as9IkKUpb_large_17526866",
+            "width": 452,
+            "height": 452
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "Frameworks",
+    "label": "Frameworks",
+    "attachments": [
+      "https://user-images.githubusercontent.com/17526866/31852285-64cc8b88-b675-11e7-8ae1-2b01f74174f2.png"
+    ]
+  },
+  {
+    "ID": 4456,
+    "Title": "Fix warnings for var usage",
+    "Author": "amelzer",
+    "Created": "2017-10-21",
+    "Updated": "2017-10-21",
+    "Merged": "2017-10-21",
+    "Description": "Converted remaining vars to const to fix warnings in tests",
+    "Branch": "amelzer:fix-varnings",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4456",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "att0uBRwzmAL6WOS4",
+        "url": "https://dl.airtable.com/IyPt9CXHRYHq6BXk0RhG_1628866",
+        "filename": "1628866",
+        "size": 18224,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/uw31a61HQy6l9j7Hdy3Q_small_1628866",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/A531FhZzShOJO4ARuKlK_large_1628866",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4452,
+    "Title": "bump launchpad",
+    "Author": "jasonLaster",
+    "Created": "2017-10-20",
+    "Updated": "2017-10-21",
+    "Merged": "2017-10-21",
+    "Branch": "jasonLaster:bump-pad-8",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4452",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "att1W9FSnrtqGT3UU",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Infrastructure",
+    "label": "Infrastructure",
+    "attachments": []
+  },
+  {
+    "ID": 4449,
+    "Title": "Add Jest Cases",
+    "Author": "jasonLaster",
+    "Created": "2017-10-20",
+    "Updated": "2017-10-21",
+    "Merged": "2017-10-21",
+    "Description": "### Summary of Changes\r\n\r\nAdds support for cases aka data providers, via the `jest-in-case` package. Note our tests don't change at all",
+    "Branch": "jasonLaster:in-case",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4449",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "attpnLdmrp682GMIG",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4448,
+    "Title": "Undo string change to editor.addConditionalBreakpoint",
+    "Author": "lukaszsobek",
+    "Created": "2017-10-20",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "Associated Issue: #4378\r\n\r\n### Summary of Changes\r\n\r\n* Reverts editor.addConditionalBreakpoint string changes",
+    "Branch": "lukaszsobek:undo-string-changes",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4448",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "atto28nzl2tbjVvpq",
+        "url": "https://dl.airtable.com/AkXL8ttWSTOQLqwoI2Cg_23530054",
+        "filename": "23530054",
+        "size": 44851,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/fKDzZGUR7ywskVhemli5_small_23530054",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/VDrQSSswRFCoySs7IGnn_large_23530054",
+            "width": 200,
+            "height": 200
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4447,
+    "Title": "The second 10/13 release",
+    "Author": "jasonLaster",
+    "Created": "2017-10-20",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Branch": "jasonLaster:10-13-2",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4447",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "att9RaMhJ8kyeqtOT",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Docs",
+    "label": "Docs",
+    "attachments": []
+  },
+  {
+    "ID": 4445,
+    "Title": "Support highlighting the first line of file",
+    "Author": "bomsy",
+    "Created": "2017-10-20",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "\r\nAssociated Issue: none\r\n\r\n### Summary of Changes\r\n\r\n* As a follow-up to #4143\r\n* Fixes an issue where the `line` being `0` returns a falsy, causing the not to highlight for single line minifed files\r\n* Use `loadedState` to check if the text has fully loaded\r\n\r\n### Test Plan\r\n\r\nTell us a little a bit about how you tested your patch.\r\n\r\nExample test plan:\r\n\r\n- [x] Go to the `source mapped js.min files` example\r\n- [x] Press `cmd + shift + f`\r\n- [x] search for `log-message`\r\n- [x] Click the match result for `example-websites/source-mapping/js/main.min.js`\r\n- [x] The line should flash\r\n",
+    "Branch": "bomsy:follow-up-4143",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4445",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "atts3j8aTY2D3zVzJ",
+        "url": "https://dl.airtable.com/jytzI2CpRGi0E1BI8Y7y_792924",
+        "filename": "792924",
+        "size": 25202,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/gCukZ0zTcbDf2pfdWmQT_small_792924",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/dlCPOpmTRnuE62u6mpQG_large_792924",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "label": "Bug",
+    "attachments": []
+  },
+  {
+    "ID": 4442,
+    "Title": "bump yarn",
+    "Author": "jasonLaster",
+    "Created": "2017-10-19",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Branch": "jasonLaster:bump-yarn",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4442",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "attpNYcg5GfhYLwum",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Infrastructure",
+    "label": "Infrastructure",
+    "attachments": []
+  },
+  {
+    "ID": 4441,
+    "Title": "Blackboxed sources distinguished by icon in source tree ",
+    "Author": "tohmjudson",
+    "Created": "2017-10-19",
+    "Updated": "2017-10-21",
+    "Merged": "2017-10-21",
+    "Description": "Associated Issue: #3576 \r\n\r\n### Summary of Changes\r\n\r\n* Added blackbox  icon to sourcetree when a file is blackboxed\r\n\r\n### More info\r\n\r\nPer @jasonLaster, We most likely will need some sort of \"extraData\" added to the SourceTree.js => treeProps in the future for use in persisting data and passing other info we may need to live update\r\n\r\n### Screenshots/Videos\r\n![ijsnocs2nn](https://user-images.githubusercontent.com/12687394/31789241-5663105e-b4c6-11e7-96c4-c6812c34965d.gif)\r\n\r\n",
+    "Branch": "tohmjudson:3576-Blackboxed-Sourcetree",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4441",
+    "Closed": "2017-10-21",
+    "Avatar": [
+      {
+        "id": "attRwsXUr3Topw2bV",
+        "url": "https://dl.airtable.com/PtFIbOxIRQCOUWVoUMtv_12687394",
+        "filename": "12687394",
+        "size": 28320,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/sr6EuZztRz6qWM38nvbX_small_12687394",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/iIjnfix4QLG6MSIYP7na_large_12687394",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "UI Polish",
+    "label": "UI Polish",
+    "attachments": []
+  },
+  {
+    "ID": 4434,
+    "Title": "Change port 9000 default to 8116 default",
+    "Author": "michaelgv",
+    "Created": "2017-10-19",
+    "Updated": "2017-10-19",
+    "Merged": "2017-10-19",
+    "Description": "Associated Issue: N/A\r\n\r\n### Summary of Changes\r\n\r\n* Change port 9000 to 8112 to fix \"Port in use\" errors that sometimes occur\r\n\r\n### Test Plan\r\n\r\n* Changed port, everything proceeding to function properly\r\n\r\n### Screenshots/Videos (OPTIONAL)\r\nN/A",
+    "Branch": "michaelgv:patch-1",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4434",
+    "Closed": "2017-10-19",
+    "Avatar": [
+      {
+        "id": "att8WKikpVgCaUa3h",
+        "url": "https://dl.airtable.com/C01yj0kQQ96lXsFlNiIA_32310492",
+        "filename": "32310492",
+        "size": 19110,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/scqsk50fTuGBn7BLTFcT_small_32310492",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/vWSRzPSRxOwltlygf5XD_large_32310492",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Infrastructure",
+    "label": "Infrastructure",
+    "attachments": []
+  },
+  {
+    "ID": 4433,
+    "Title": "Upgrade flow",
+    "Author": "ahuth",
+    "Created": "2017-10-18",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "Associated Issue: #3683 \r\n\r\n### Summary of Changes\r\n\r\n* Updated Flow to 0.53.0.\r\n* Moved `defaultProps` for class components to `static` properties, which Flow understands.\r\n* Updated the syntax of the flow typing. Note that I have not tried to improve on any of the type signatures at all.\r\n\r\nIn particular, instead of defining classes like\r\n\r\n```js\r\nclass Foo extends Component {\r\n  props: Props\r\n  state: State\r\n}\r\n```\r\n\r\nit will now be\r\n\r\n```js\r\nclass Foo extends Component<Props, State>\r\n```\r\n\r\n### Test Plan\r\n\r\n* Tests\r\n* Manual QA\r\n",
+    "Branch": "ahuth:upgrade-flow",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4433",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "att6omRMMKTdisdmJ",
+        "url": "https://dl.airtable.com/7ftdHaZhRmuHEleV7n2S_2503289",
+        "filename": "2503289",
+        "size": 1590,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/jZJWUYGSYNqneCOlFuoQ_small_2503289",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/G1cYKRw4Seyq1XBS1BUN_large_2503289",
+            "width": 420,
+            "height": 420
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4430,
+    "Title": "Support framework frames for Marko",
+    "Author": "jainsneha23",
+    "Created": "2017-10-18",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "Associated Issue: #2980 \r\n\r\n### Summary of Changes\r\n\r\n* Support framework frames for Marko\r\n\r\n### Test Plan\r\n\r\nTell us a little a bit about how you tested your patch.\r\n\r\nExample test plan:\r\n\r\n- [x] Run the debugger locally\r\n- [x] Debug Marko Sample [https://github.com/marko-js-samples/marko-webpack](https://github.com/marko-js-samples/marko-webpack)\r\n\r\n### Screenshots/Videos\r\n<img width=\"375\" alt=\"screen shot 2017-10-19 at 12 06 18 am\" src=\"https://user-images.githubusercontent.com/8366397/31739666-43a9a4fa-b46c-11e7-878e-008b9259cfa6.png\">\r\n<img width=\"378\" alt=\"screen shot 2017-10-19 at 12 06 58 am\" src=\"https://user-images.githubusercontent.com/8366397/31739667-440465fc-b46c-11e7-88ba-7131f6520cb4.png\">\r\n",
+    "Branch": "jainsneha23:frames-add-marko",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4430",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "attEhGe9SbeXcKQSZ",
+        "url": "https://dl.airtable.com/2liLsihQVm9ItveeYeTw_8366397",
+        "filename": "8366397",
+        "size": 19585,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/l4NWwYaqTNSos4jOAXdU_small_8366397",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/dPOs1XVaRly6YmsM9Rdn_large_8366397",
+            "width": 300,
+            "height": 300
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "Frameworks",
+    "label": "Frameworks",
+    "attachments": [
+      "https://user-images.githubusercontent.com/8366397/31739666-43a9a4fa-b46c-11e7-878e-008b9259cfa6.png"
+    ]
+  },
+  {
+    "ID": 4427,
+    "Title": "Align the first tab with wide gutters",
+    "Author": "jainsneha23",
+    "Created": "2017-10-18",
+    "Updated": "2017-10-23",
+    "Merged": "2017-10-23",
+    "Description": "Associated Issue: #3846 \r\n\r\n### Summary of Changes\r\n\r\n* Pane toggle button padding changed to make it wider\r\n* Margin left removed from first tab\r\n\r\n### Test Plan\r\n\r\n- [x] Open the debugger and check the view\r\n\r\n### Screenshots/Videos (OPTIONAL)\r\n<img width=\"739\" alt=\"screen shot 2017-10-18 at 11 12 15 pm\" src=\"https://user-images.githubusercontent.com/8366397/31733681-07bf433a-b45a-11e7-91b1-57c546563282.png\">\r\n",
+    "Branch": "jainsneha23:Fix-3846",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4427",
+    "Closed": "2017-10-23",
+    "Avatar": [
+      {
+        "id": "attFPsC6PTBp4Y1tU",
+        "url": "https://dl.airtable.com/2liLsihQVm9ItveeYeTw_8366397",
+        "filename": "8366397",
+        "size": 19585,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/l4NWwYaqTNSos4jOAXdU_small_8366397",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/dPOs1XVaRly6YmsM9Rdn_large_8366397",
+            "width": 300,
+            "height": 300
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "label": "Bug",
+    "attachments": [
+      "https://user-images.githubusercontent.com/8366397/31733681-07bf433a-b45a-11e7-91b1-57c546563282.png"
+    ]
+  },
+  {
+    "ID": 4425,
+    "Title": "Support quoted strings in watch expressions (e.g. \"3\")",
+    "Author": "jasonLaster",
+    "Created": "2017-10-18",
+    "Updated": "2017-10-18",
+    "Merged": "2017-10-18",
+    "Description": "### Summary of Changes\r\n\r\n@bomsy and i found that \"3\" watch expressions were showing a syntax error. The problem was how we escaped the watch expression: \r\n\r\nthis is what we want:\r\n\r\n```\r\n\"try {\r\n \\\\\"2\\\\\"\r\n} catch (e) {\r\n e\r\n}\"\r\n```\r\n\r\n### Test Plan\r\n\r\nunit tests\r\n\r\n### before\r\n\r\n<img width=\"448\" alt=\"screen shot 2017-10-18 at 10 43 28 am\" src=\"https://user-images.githubusercontent.com/254562/31724979-37ce2b86-b3f1-11e7-8a81-412bd5506d9d.png\">\r\n\r\n\r\n### after\r\n\r\n<img width=\"439\" alt=\"screen shot 2017-10-18 at 10 38 50 am\" src=\"https://user-images.githubusercontent.com/254562/31724957-237c88bc-b3f1-11e7-9541-2db890ced335.png\">\r\n",
+    "Branch": "jasonLaster:fix-expression-syntax-error",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4425",
+    "Closed": "2017-10-18",
+    "Avatar": [
+      {
+        "id": "attqo1RAaztCNEq8w",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "label": "Bug",
+    "attachments": [
+      "https://user-images.githubusercontent.com/254562/31724979-37ce2b86-b3f1-11e7-8a81-412bd5506d9d.png"
+    ]
+  },
+  {
+    "ID": 4424,
+    "Title": "Disallow gutter context menus for empty lines",
+    "Author": "darkwing",
+    "Created": "2017-10-18",
+    "Updated": "2017-10-18",
+    "Merged": "2017-10-18",
+    "Branch": "darkwing:no-context-menu-empty-line",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4424",
+    "Closed": "2017-10-18",
+    "Avatar": [
+      {
+        "id": "attK5gW2EBYoDTcO9",
+        "url": "https://dl.airtable.com/TI5OwIIhQXmCHQnIlDHR_46655",
+        "filename": "46655",
+        "size": 197052,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/n1bMO2shSPSPXALwOEAh_small_46655",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/3xdKTldyRajzgHdobCqV_large_46655",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Bug",
+    "label": "Bug",
+    "attachments": []
+  },
+  {
+    "ID": 4423,
+    "Title": "Keeps focus on input field",
+    "Author": "lukaszsobek",
+    "Created": "2017-10-18",
+    "Updated": "2017-10-19",
+    "Merged": "2017-10-18",
+    "Description": "Associated Issue: #4422\r\n\r\n### Summary of Changes\r\n\r\n* Added clickhandler to listen to changes in box\r\n\r\n### Test Plan\r\n\r\nClicked a lot\r\n\r\n### Screenshots/Videos (OPTIONAL)\r\nhttp://g.recordit.co/iXs7CldKz5.gif\r\n",
+    "Branch": "lukaszsobek:set-focus",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4423",
+    "Closed": "2017-10-18",
+    "Avatar": [
+      {
+        "id": "attRpwOneLSrq11vn",
+        "url": "https://dl.airtable.com/AkXL8ttWSTOQLqwoI2Cg_23530054",
+        "filename": "23530054",
+        "size": 44851,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/fKDzZGUR7ywskVhemli5_small_23530054",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/VDrQSSswRFCoySs7IGnn_large_23530054",
+            "width": 200,
+            "height": 200
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "UI Polish",
+    "label": "UI Polish",
+    "attachments": []
+  },
+  {
+    "ID": 4416,
+    "Title": "Revert \"Use a monospace font for editor line numbers\"",
+    "Author": "darkwing",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-18",
+    "Merged": "2017-10-18",
+    "Description": "So it turns out that this is simply a dev environment problem -- Nightly currently shows monospaced line numbers and code.  \r\n\r\nWe should, however, find a way to include the common.css file so that we see monospaced code in dev.",
+    "Branch": "darkwing:revert-monospace",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4416",
+    "Closed": "2017-10-18",
+    "Avatar": [
+      {
+        "id": "attww8IQnvUgSnzNh",
+        "url": "https://dl.airtable.com/TI5OwIIhQXmCHQnIlDHR_46655",
+        "filename": "46655",
+        "size": 197052,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/n1bMO2shSPSPXALwOEAh_small_46655",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/3xdKTldyRajzgHdobCqV_large_46655",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4415,
+    "Title": "add layout test",
+    "Author": "jasonLaster",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-19",
+    "Merged": "2017-10-18",
+    "Description": "Associated Issue: #3389\r\n\r\n### Summary of Changes\r\n\r\n* switch layouts\r\n* makes mochii interactive (so we can do re-runs)",
+    "Branch": "jasonLaster:layout-test",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4415",
+    "Closed": "2017-10-18",
+    "Avatar": [
+      {
+        "id": "attSCDsDrV6nkonCL",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Testing",
+    "label": "Testing",
+    "attachments": []
+  },
+  {
+    "ID": 4414,
+    "Title": "Update mochii to the latest version 🚀",
+    "Author": "greenkeeper[bot]",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-17",
+    "Merged": "2017-10-17",
+    "Description": "\n## Version **0.0.9** of [mochii](https://github.com/jasonLaster/mochi) was just published.\n\n<table>\n  <tr>\n    <th align=left>\n      Dependency\n    </td>\n    <td>\n      mochii\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Current Version\n    </td>\n    <td>\n      0.0.8\n    </td>\n  </tr>\n  <tr>\n    <th align=left>\n      Type\n    </td>\n    <td>\n      devDependency\n    </td>\n  </tr>\n</table>\n\nThe version **0.0.9** is **not covered** by your **current version range**.\n\nIf you don’t accept this pull request, your project will work just like it did before. However, you might be missing out on a bunch of new features, fixes and/or performance improvements from the dependency update.\n\nIt might be worth looking into these changes and trying to get this project onto the latest version of mochii.\n\nIf you have a solid test suite and good coverage, a passing build is a strong indicator that you can take advantage of these changes directly by merging the proposed change into your project. If the build fails or you don’t have such unconditional trust in your tests, this branch is a great starting point for you to work on the update.\n\n\n---\n\n\n<details>\n<summary>Commits</summary>\n<p>The new version differs by 2 commits.</p>\n<ul>\n<li><a href=\"https://urls.greenkeeper.io/jasonLaster/mochii/commit/b89356f802ce547f468987b4c9daf3032b71b08d\"><code>b89356f</code></a> <code>add re-run prompt (#32)</code></li>\n<li><a href=\"https://urls.greenkeeper.io/jasonLaster/mochii/commit/f9b60c02ea51dfdfe426b353af6f313e111976e0\"><code>f9b60c0</code></a> <code>bump</code></li>\n</ul>\n<p>See the <a href=\"https://urls.greenkeeper.io/jasonLaster/mochii/compare/e720e43884c0ea56c11d7bb7b6244b8661109bd8...b89356f802ce547f468987b4c9daf3032b71b08d\">full diff</a></p>\n</details>\n\n<details>\n  <summary>FAQ and help</summary>\n\n  There is a collection of [frequently asked questions](https://greenkeeper.io/faq.html). If those don’t help, you can always [ask the humans behind Greenkeeper](https://github.com/greenkeeperio/greenkeeper/issues/new).\n</details>\n\n\n---\n\n\nYour [Greenkeeper](https://greenkeeper.io) bot :palm_tree:\n\n",
+    "Branch": "devtools-html:greenkeeper/mochii-0.0.9",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4414",
+    "Closed": "2017-10-17",
+    "Avatar": [
+      {
+        "id": "att2sIo694VhnI8dF",
+        "url": "https://dl.airtable.com/K9g6tCUSMG0BxEjLFkd7_505",
+        "filename": "505",
+        "size": 22828,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/uq74G5DFQzFtoPEUn3Qh_small_505",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/58DxM0rqTlyqxf8zIfYQ_large_505",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Infrastructure",
+    "label": "Infrastructure",
+    "attachments": []
+  },
+  {
+    "ID": 4408,
+    "Title": "Synchronize smoke test for browser content toolbox from m-c",
+    "Author": "juliandescottes",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-17",
+    "Merged": "2017-10-17",
+    "Description": "### Summary of Changes\r\n\r\n* synchronize new test from [Bug 1407426](https://bugzilla.mozilla.org/show_bug.cgi?id=1407426)\r\n* update m-c commit in travis yml to retrieve some changes necessary to run the new test\r\n\r\n",
+    "Branch": "juliandescottes:test-bct",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4408",
+    "Closed": "2017-10-17",
+    "Avatar": [
+      {
+        "id": "attSGtLsYJ1javIk8",
+        "url": "https://dl.airtable.com/xF1kJu6tTMmyNfo5mLCR_1141550",
+        "filename": "1141550",
+        "size": 7360,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/ztOK7ix5Tk2GcY9ZKfby_small_1141550",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/K5zd27wDRiaKWNdLoTkM_large_1141550",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Testing",
+    "label": "Testing",
+    "attachments": []
+  },
+  {
+    "ID": 4405,
+    "Title": "Adds flow types to the Scope declaration.",
+    "Author": "yurydelendik",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-17",
+    "Merged": "2017-10-17",
+    "Description": "Associated Issue: FIXME comments at debugger-html.js",
+    "Branch": "yurydelendik:typed-scope",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4405",
+    "Closed": "2017-10-17",
+    "Avatar": [
+      {
+        "id": "attMehyAiEgQICBQA",
+        "url": "https://dl.airtable.com/oxbjMVH3SZK2rOZbGzOW_1523410",
+        "filename": "1523410",
+        "size": 43534,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/kMcBQTeQfyqXc5daTbEp_small_1523410",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/PAjdLjp2TQaUgYfvmGR2_large_1523410",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4404,
+    "Title": "Cleanup babel",
+    "Author": "jasonLaster",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-17",
+    "Merged": "2017-10-17",
+    "Description": "### Summary of Changes\r\n\r\n* preset-env\r\n* drop asyncToGenerator\r\n* run prettier on install. ✋ ",
+    "Branch": "jasonLaster:babel-env",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4404",
+    "Closed": "2017-10-17",
+    "Avatar": [
+      {
+        "id": "attcTGaYmvAuyeYup",
+        "url": "https://dl.airtable.com/2nXjl1mfRNGfY4kru55b_254562",
+        "filename": "254562",
+        "size": 49084,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/WmoxWi91RBirgqBqGljw_small_254562",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/CldxnnhgSs2yh6UpbnJY_large_254562",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Code Health",
+    "label": "Code Health",
+    "attachments": []
+  },
+  {
+    "ID": 4400,
+    "Title": "update 10-17-2017",
+    "Author": "codehag",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "update for this week",
+    "Branch": "codehag:updates/10-17-2017",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4400",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "attG63RPOjbnsd3EA",
+        "url": "https://dl.airtable.com/5lluCHGERBKCVOdZkD1a_26968615",
+        "filename": "26968615",
+        "size": 40879,
+        "type": "image/jpeg",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/HqQHWxySesnMs5IJ4DdQ_small_26968615",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/mpX8GIBsTTqlRpnb5X23_large_26968615",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Docs",
+    "label": "Docs",
+    "attachments": []
+  },
+  {
+    "ID": 4398,
+    "Title": "Move Source Search to a Modal",
+    "Author": "wldcordeiro",
+    "Created": "2017-10-17",
+    "Updated": "2017-10-18",
+    "Merged": "2017-10-18",
+    "Description": "Associated Issue: #<issue number>\r\n\r\n### Summary of Changes\r\n\r\n* Refactor `SourceSearch` into `FilesModal`\r\n\r\n\r\n### Test Plan\r\n\r\nTell us a little a bit about how you tested your patch.\r\n\r\nExample test plan:\r\n\r\n- [x] Command-P opens the modal\r\n- [x] Enter a query to see results\r\n- [x] up down to traverse results\r\n- [x] enter on result to select it\r\n\r\n\r\n### Screenshots/Videos (OPTIONAL)\r\n\r\n![Light Theme](https://user-images.githubusercontent.com/580982/31694689-e37a4c4c-b362-11e7-8dff-15b708d7199f.png)\r\n![Dark Theme](https://user-images.githubusercontent.com/580982/31694690-e3951bee-b362-11e7-9eb0-0e7023c5876e.png)\r\n\r\n",
+    "Branch": "wldcordeiro:move-file-find-modal",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4398",
+    "Closed": "2017-10-18",
+    "Avatar": [
+      {
+        "id": "attFCIuOBclle7AJt",
+        "url": "https://dl.airtable.com/MzY6NzKvR1YtqSN5Q6JT_580982",
+        "filename": "580982",
+        "size": 132038,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/mPCSXb3hSO2e7x0MjYdC_small_580982",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/HV3JBiqAQLiS9kzn4JDR_large_580982",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "label": "Feature",
+    "attachments": [
+      "https://user-images.githubusercontent.com/580982/31694689-e37a4c4c-b362-11e7-8dff-15b708d7199f.png"
+    ]
+  },
+  {
+    "ID": 4386,
+    "Title": "Converted blackBox/prettyPrint SVG's to CSS",
+    "Author": "jselmani",
+    "Created": "2017-10-16",
+    "Updated": "2017-10-17",
+    "Merged": "2017-10-17",
+    "Description": "Associated Issue: #4350 \r\n\r\nConverted `blackBox` and `prettyPrint` SVG's to images utilizing CSS styles and `img` tags. \r\n \r\n### Screenshots\r\n![convertedtabsandfooter](https://user-images.githubusercontent.com/25250594/31640486-c7f09a0a-b2ac-11e7-95e6-f9aa50a1df3c.PNG)\r\n\r\n",
+    "Branch": "jselmani:Issue4350BlackboxPrettyPrint",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4386",
+    "Closed": "2017-10-17",
+    "Avatar": [
+      {
+        "id": "attRVbRZUz2DUAZC0",
+        "url": "https://dl.airtable.com/qpLu4Zn4TMyRl6Q3yGLx_25250594",
+        "filename": "25250594",
+        "size": 138489,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/sQ2OpDIdRQG5joGnVwJx_small_25250594",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/zNrgfXDOT6uiimhCBymw_large_25250594",
+            "width": 276,
+            "height": 276
+          }
+        }
+      }
+    ],
+    "Label": "Performance",
+    "label": "Performance",
+    "attachments": [
+      "https://user-images.githubusercontent.com/25250594/31640486-c7f09a0a-b2ac-11e7-95e6-f9aa50a1df3c.PNG"
+    ]
+  },
+  {
+    "ID": 4329,
+    "Title": "Add Classes and Imports to the AST",
+    "Author": "James300",
+    "Created": "2017-10-08",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "Associated Issue: #4151\r\n\r\nThis is the first step towards getting React icons displaying for their appropriate tab in the debugger.\r\n\r\n### Summary of Changes\r\n\r\n* AST grabs imports and classes\r\n* Framework check for React Component\r\n* Added test for React Component",
+    "Branch": "James300:tabs-with-react-icons",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4329",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "attaZZXj7ySDUmfrv",
+        "url": "https://dl.airtable.com/u9OeaicYTxygbpyNzvvg_9325039",
+        "filename": "9325039",
+        "size": 46557,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/u3gBvYsTO6NBwTZiTNMj_small_9325039",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/5JvpbZwYT4y1ZwCy37CN_large_9325039",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "Label2": "Frameworks",
+    "label": "Frameworks",
+    "attachments": []
+  },
+  {
+    "ID": 4143,
+    "Title": "Support scrolling to column when searching and pausing",
+    "Author": "James300",
+    "Created": "2017-09-23",
+    "Updated": "2017-10-20",
+    "Merged": "2017-10-20",
+    "Description": "Associated Issue: #3892\r\n\r\n### Current Issues\r\n\r\n* Scroll to does not seems to be working\r\n* Tests are breaking for `getOutOfScopeLocations`\r\n\r\nI also need to clean some things up.\r\n\r\n### Summary of Changes\r\n\r\nComing soon...\r\n\r\n### Test Plan\r\n\r\n* Search sources still opens source correctly\r\n* Search files still opens source correctly\r\n* Sources tree still opens source correctly\r\n* Searching by files opens to line and column",
+    "Branch": "James300:scroll-to-column",
+    "Url": "https://github.com/devtools-html/debugger.html/pull/4143",
+    "Closed": "2017-10-20",
+    "Avatar": [
+      {
+        "id": "att40G0aBA727OnAp",
+        "url": "https://dl.airtable.com/u9OeaicYTxygbpyNzvvg_9325039",
+        "filename": "9325039",
+        "size": 46557,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://dl.airtable.com/u3gBvYsTO6NBwTZiTNMj_small_9325039",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://dl.airtable.com/5JvpbZwYT4y1ZwCy37CN_large_9325039",
+            "width": 460,
+            "height": 460
+          }
+        }
+      }
+    ],
+    "Label": "Feature",
+    "label": "Feature",
+    "attachments": []
+  }
+]

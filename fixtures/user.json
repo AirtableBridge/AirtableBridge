@@ -1,0 +1,35 @@
+{
+  "login": "belld19233",
+  "id": 25886486,
+  "avatar_url": "https://avatars0.githubusercontent.com/u/25886486?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/belld19233",
+  "html_url": "https://github.com/belld19233",
+  "followers_url": "https://api.github.com/users/belld19233/followers",
+  "following_url":
+    "https://api.github.com/users/belld19233/following{/other_user}",
+  "gists_url": "https://api.github.com/users/belld19233/gists{/gist_id}",
+  "starred_url":
+    "https://api.github.com/users/belld19233/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/belld19233/subscriptions",
+  "organizations_url": "https://api.github.com/users/belld19233/orgs",
+  "repos_url": "https://api.github.com/users/belld19233/repos",
+  "events_url": "https://api.github.com/users/belld19233/events{/privacy}",
+  "received_events_url":
+    "https://api.github.com/users/belld19233/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "Dave B",
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "public_repos": 6,
+  "public_gists": 0,
+  "followers": 1,
+  "following": 1,
+  "created_at": "2017-02-19T20:08:03Z",
+  "updated_at": "2017-10-13T04:18:03Z"
+}
