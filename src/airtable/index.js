@@ -3,5 +3,6 @@ const query = require("./query");
 
 module.exports = {
   authenticate,
-  query
+  query,
+  records: require("./records")
 };

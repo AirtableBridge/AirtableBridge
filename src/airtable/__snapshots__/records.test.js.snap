@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`records create issue 1`] = `
+"create
+{
+  \\"Title\\": \\"Debugging Probot\\",
+  \\"ID\\": 4384,
+  \\"Open\\": true,
+  \\"URL\\": \\"https://github.com/devtools-html/debugger.html/issues/4384\\",
+  \\"Description\\": \\"Ignore this bug. Instead of making comments on bugs in progress, I will do so here in order to debug the issue of Probot not detecting some /claim comments.\\\\r\\\\n\\\\r\\\\nAlso, this will test our Probot's ability to assign users to a bug.\\",
+  \\"Labels\\": [
+    \\"in progress\\"
+  ],
+  \\"Author\\": \\"belld19233\\",
+  \\"Created\\": \\"10/16/2017\\",
+  \\"Updated\\": \\"10/20/2017\\",
+  \\"Closed\\": null
+}"
+`;
+
+exports[`records create pr 1`] = `
+"create
+{
+  \\"ID\\": 4478,
+  \\"Url\\": \\"https://github.com/devtools-html/debugger.html/pull/4478\\",
+  \\"Open\\": true,
+  \\"Title\\": \\"Setup breakpoint dropdown\\",
+  \\"Created\\": \\"10/23/2017\\",
+  \\"Updated\\": \\"10/23/2017\\",
+  \\"Closed\\": null,
+  \\"Merged\\": null,
+  \\"Description\\": \\"Associated Issue: #4410 \\\\r\\\\n\\\\r\\\\n### Summary of Changes\\\\r\\\\n\\\\r\\\\n* Created breakpoint dropdown styling \\\\r\\\\n* Breakpoint toggle returns dropdown\\\\r\\\\n* Changed dropdown .svg to \\\\\\"+\\\\\\"\\\\r\\\\n\\\\r\\\\nExample test plan:\\\\r\\\\n\\\\r\\\\n- [x] Create an arbitrary breakpoint\\\\r\\\\n- [x] Breakpoint window displays panel toggle \\\\r\\\\n- [x] Clicking “+” opens the panel\\\\r\\\\n\\\\r\\\\nTODO:\\\\r\\\\n* Adjust dropdown width to fit parent\\\\r\\\\n* Add menu items (with corresponding images)\\\\r\\\\n* Add menu item implementation\\\\r\\\\n* Remove CommandBar options as needed\\",
+  \\"Author\\": \\"GarethSharpe\\",
+  \\"Avatar\\": [
+    {
+      \\"url\\": \\"https://avatars1.githubusercontent.com/u/22062107?v=4\\"
+    }
+  ],
+  \\"Branch\\": \\"GarethSharpe:master\\"
+}"
+`;
+
+exports[`records update issue 1`] = `
+"create
+{
+  \\"Title\\": \\"Debugging Probot\\",
+  \\"ID\\": 4384,
+  \\"Open\\": true,
+  \\"URL\\": \\"https://github.com/devtools-html/debugger.html/issues/4384\\",
+  \\"Description\\": \\"Ignore this bug. Instead of making comments on bugs in progress, I will do so here in order to debug the issue of Probot not detecting some /claim comments.\\\\r\\\\n\\\\r\\\\nAlso, this will test our Probot's ability to assign users to a bug.\\",
+  \\"Labels\\": [
+    \\"in progress\\"
+  ],
+  \\"Author\\": \\"belld19233\\",
+  \\"Created\\": \\"10/16/2017\\",
+  \\"Updated\\": \\"10/20/2017\\",
+  \\"Closed\\": null
+}
+
+get
+4384"
+`;

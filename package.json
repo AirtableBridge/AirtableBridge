@@ -8,5 +8,9 @@
     "node-github": "^0.0.3",
     "octokit": "^0.10.4",
     "octonode": "^0.9.1"
+  },
+  "jest": {
+    "rootDir": "src",
+    "setupFiles": ["<rootDir>/tests/setup.js"]
   }
 }

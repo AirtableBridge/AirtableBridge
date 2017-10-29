@@ -69,9 +69,9 @@ async function createPRs(prs) {
 }
 
 (async function() {
-  // const prs = await getPRs();
-  const prs = readPRs();
+  const prs = await getPRs();
+  // const prs = readPRs();
   // console.log(prs.length);
-  await createPRs(prs);
-  // console.log(prs);
+  // await createPRs(prs);
+  console.log(prs);
 })();

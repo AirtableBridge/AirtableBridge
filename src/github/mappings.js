@@ -13,22 +13,19 @@ function getAvatar(user) {
 
 function mapIssue(payload) {
   const {
-    issue: {
-      title,
-      number,
-      state,
-      html_url,
-      labels,
-      created_at,
-      updated_at,
-      closed_at,
-      user,
-      body
-    }
+    title,
+    number,
+    state,
+    html_url,
+    labels,
+    created_at,
+    updated_at,
+    closed_at,
+    user,
+    body
   } = payload;
   const labelNames = labels.map(label => label.name);
   const author = user.login;
-  // console.log({title, created_at, updated_at, closed_at, body})
   return {
     Title: title,
     ID: number,
@@ -102,4 +99,16 @@ function mapPR(pr) {
   };
 }
 
-module.exports = { mapIssue, mapCommit, mapUser, mapPR };
+function mapPayload(table, payload) {
+  const map = {
+    Issues: mapIssue,
+    Pulls: mapPR,
+    Users: mapUser,
+    Commits: mapCommit
+  };
+
+  const data = map[table](payload);
+  return data;
+}
+
+module.exports = { mapIssue, mapCommit, mapUser, mapPR, mapPayload };
