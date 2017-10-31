@@ -1,10 +1,10 @@
-### APIs
+### Airtable Bridge
 
-a useful set of scripts for working w/ Github and other services like AirTable.
+A project for syncing github and airtable data
 
 #### Github
 
-[api], [repo]
+Github Docs [api], [repo]
 
 
 [api]: https://octokit.github.io/node-github/

@@ -2,16 +2,21 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:7.10
+      - image: circleci/node:8.5.0
 
     working_directory: ~/AirtableBridge
 
     steps:
       - checkout
 
+      - restore_cache:
+          keys:
+            - key-{{ checksum "yarn.lock" }}
+
       - run: yarn
 
       - save_cache:
+          key: key-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
 
