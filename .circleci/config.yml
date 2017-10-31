@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+
+    working_directory: ~/AirtableBridge
+
+    steps:
+      - checkout
+
+      - run: yarn
+
+      - save_cache:
+          paths:
+            - node_modules
+
+      - run: yarn test
