@@ -1,16 +1,26 @@
 {
+  "name": "github-airtable-bridge",
+  "version": "0.0.3",
   "dependencies": {
     "airtable": "^0.5.0",
+    "date-names": "^0.1.10",
     "dedent": "^0.7.0",
     "github": "^11.0.0",
     "jest": "^21.2.1",
     "lodash": "^4.17.4",
     "node-github": "^0.0.3",
     "octokit": "^0.10.4",
-    "octonode": "^0.9.1"
+    "octonode": "^0.9.1",
+    "ordinal": "^1.0.2"
   },
+  "files": [
+    "src"
+  ],
+  "main": "index.js",
   "jest": {
     "rootDir": "src",
-    "setupFiles": ["<rootDir>/tests/setup.js"]
+    "setupFiles": [
+      "<rootDir>/tests/setup.js"
+    ]
   }
 }

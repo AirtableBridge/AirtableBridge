@@ -20,7 +20,7 @@ async function get(airtable, table, ID) {
   }
 }
 
-async function getUser(airtable, login) {
+async function getUserId(airtable, github, login) {
   try {
     const records = await airtable("Users")
       .select({
@@ -31,6 +31,16 @@ async function getUser(airtable, login) {
 
     if (records.length > 0) {
       return records[0].id;
+    } else {
+      const payload = await github.users.getForUser({ username: login });
+      if (payload && payload.data) {
+        const user = mappings.mapUser(payload.data);
+        const response = await airtable("Users").create(user);
+        if (response && response.id) {
+          debug(`Created user ${login}`);
+          return response.id;
+        }
+      }
     }
   } catch (e) {
     debug(`failed to find user ${login} - ${e.message}`);
@@ -38,15 +48,24 @@ async function getUser(airtable, login) {
   }
 }
 
-async function update(airtable, table, payload) {
+async function update(airtable, github, table, payload) {
   let record;
   let data;
   try {
     data = mappings.mapPayload(table, payload);
-
     if (data.Author) {
-      const authorId = await getUser(airtable, data.Author);
+      const authorId = await getUserId(airtable, github, data.Author);
       data.Author = [authorId];
+    }
+
+    if (data.Assignees) {
+      let assigneeIds = [];
+      const assignees = data.Assignees;
+      for (assignee of assignees) {
+        const assigneeId = await getUserId(airtable, github, assignee);
+        assigneeIds.push(assigneeId);
+      }
+      data.Assignees = assigneeIds.length > 0 ? assigneeIds : null;
     }
 
     const recordId = await get(airtable, table, data.ID);
@@ -62,7 +81,7 @@ async function update(airtable, table, payload) {
 
     return record;
   } catch (e) {
-    debug(`Failed to update ${table} record ${data.ID} - ${e.message}`);
+    debug(`Failed to update ${table} record ${data && data.ID} - ${e.message}`);
     return null;
   }
 }
@@ -80,4 +99,4 @@ async function create(airtable, table, payload) {
   }
 }
 
-module.exports = { create, update, get, getUser };
+module.exports = { create, update, get, getUserId };

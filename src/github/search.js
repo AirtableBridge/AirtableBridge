@@ -5,7 +5,7 @@ async function search(options, name, searchFn) {
   const shouldCache = "cache" in options ? options.cache : true;
 
   if (shouldCache) {
-    return cache.get("issues");
+    return cache.get(name);
   }
 
   let page = 1;

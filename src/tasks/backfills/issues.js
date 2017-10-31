@@ -22,7 +22,7 @@ async function getIssues() {
 
 async function updateIssues(issues) {
   for (issue of issues) {
-    await records.update(airtable, "Issues", issue);
+    await records.update(airtable, github, "Issues", issue);
   }
 }
 

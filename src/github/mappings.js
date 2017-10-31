@@ -22,15 +22,19 @@ function mapIssue(payload) {
     updated_at,
     closed_at,
     user,
-    body
+    body,
+    assignees
   } = payload;
   const labelNames = labels.map(label => label.name);
   const author = user.login;
+  const Assignees = assignees.map(assignee => assignee.login);
+
   return {
     Title: title,
     ID: number,
     Open: state == "open",
     URL: html_url,
+    Assignees,
     Description: body,
     Labels: labelNames,
     Author: author,

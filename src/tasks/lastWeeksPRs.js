@@ -2,17 +2,23 @@ const _ = require("lodash");
 const { authenticate, query } = require("../airtable");
 const airtable = authenticate();
 const dedent = require("dedent");
-const getPRScreenshots = require("../github/getPRScreenshots");
+const { getScreenshotsForPR } = require("../github/getPRScreenshots");
 const cache = require("../utils/cache");
+const ordinal = require("ordinal");
+const dateNames = require("date-names");
+async function getAuthor(recordId) {
+  const record = await airtable("Users").find(recordId);
+  return record.get("Login");
+}
 
-async function getPRs() {
-  if (true) {
+async function getPRs(options = {}) {
+  const shouldCache = options.hasOwnProperty("cache") ? options.cache : false;
+  if (shouldCache) {
     let prs = cache.get("last-week-prs");
     if (prs) {
       return prs;
     }
   }
-
   const records = await airtable("Pulls")
     .select({
       filterByFormula: "",
@@ -26,6 +32,14 @@ async function getPRs() {
   return prs;
 }
 
+function attachmentTable(id, index) {
+  return dedent`
+    | .. |
+    |--|
+    | ![${id}-${index}] |
+  `;
+}
+
 function createSection(prs, label) {
   const sectionPrs = prs.filter(pr => getLabel(pr) == label);
   const prList = sectionPrs.map(
@@ -33,7 +47,7 @@ function createSection(prs, label) {
   );
   const attachments = _.flatten(
     sectionPrs.map(pr =>
-      pr.attachments.map((attachment, index) => `![${pr.ID}-${index}]`)
+      pr.attachments.map((attachment, index) => attachmentTable(pr.ID, index))
     )
   );
   return dedent`
@@ -84,8 +98,9 @@ function getAuthors(prs) {
 
 function getHeader(prs) {
   const authors = getAuthors(prs).map(author => `[@${author}]`);
+  const today = new Date();
   return dedent`
-    ## October 24th
+    ## ${dateNames.months[today.getMonth()]} ${ordinal(today.getDate())}
 
     ...
 
@@ -96,10 +111,12 @@ function getHeader(prs) {
 async function mapPRs(prs) {
   return Promise.all(
     prs.map(async pr => {
-      const attachments = await getPRScreenshots(pr.ID);
+      const attachments = await getScreenshotsForPR(pr.ID);
+      const author = await getAuthor(pr.Author[0]);
       return {
         ...pr,
         label: pr.Label2 || pr.Label,
+        Author: author,
         attachments
       };
     })
@@ -117,15 +134,16 @@ function post(prs) {
 
   return text;
 }
-
-process.on("unhandledRejection", (reason, p) => {
-  console.log(reason);
-});
+//
+// process.on("unhandledRejection", (reason, p) => {
+//   console.log(reason);
+// });
 
 // (async () => {
 //   let prs = await getPRs();
+//   // console.log(prs[0]);
 //   // console.log(prs.map(pr => pr.attachments.length));
-//   post(prs);
+//   console.log(post(prs));
 // })();
 
 module.exports = { post, getPRs };

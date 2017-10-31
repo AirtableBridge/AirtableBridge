@@ -2,7 +2,7 @@ const _ = require("lodash");
 const authenticate = require("./authenticate");
 const github = authenticate();
 
-async function forPr(id) {
+async function getScreenshotsForPR(id) {
   const pr = await github.pullRequests.get({
     owner: "devtools-html",
     repo: "debugger.html",
@@ -24,7 +24,7 @@ async function forPr(id) {
   return screens;
 }
 
-async function forIssue(id) {
+async function getScreenshotsForIssue(id) {
   const pr = await github.pullRequests.get({
     owner: "devtools-html",
     repo: "debugger.html",
@@ -50,4 +50,4 @@ async function forIssue(id) {
 //   screenShots(4463);
 // })();
 
-module.exports = { forPr, forIssue };
+module.exports = { getScreenshotsForPR, getScreenshotsForIssue };
