@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lastWeeksPRs simple 1`] = `
-"## October 24th
+"## October 31st
 
 ...
 
@@ -13,7 +13,9 @@ exports[`lastWeeksPRs simple 1`] = `
 
 + [Converted Source Tree SVG's (including Blackbox) to images using CSS styles (#4350)][4477] [@jselmani]
 
-![4477-0]
+| .. |
+|--|
+| ![4477-0] |
 
 ### Frameworks
 
@@ -21,7 +23,9 @@ exports[`lastWeeksPRs simple 1`] = `
 
 + [Add Next.js to framework frames][4476] [@joel-bentley]
 
-![4476-0]
+| .. |
+|--|
+| ![4476-0] |
 
 ### UI Polish
 
@@ -31,7 +35,9 @@ exports[`lastWeeksPRs simple 1`] = `
 + [fix #4471 - expand the right sidebar on pausing at breakpoint][4473] [@leibale]
 + [Only show one contextmenu at a time][4470] [@jainsneha23]
 
-![4474-0]
+| .. |
+|--|
+| ![4474-0] |
 
 ### Bug
 

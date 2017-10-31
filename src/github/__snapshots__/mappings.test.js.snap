@@ -13,6 +13,9 @@ Object {
 
 exports[`mappings issue 1`] = `
 Object {
+  "Assignees": Array [
+    "belld19233",
+  ],
   "Author": "belld19233",
   "Closed": null,
   "Created": "10/16/2017",
