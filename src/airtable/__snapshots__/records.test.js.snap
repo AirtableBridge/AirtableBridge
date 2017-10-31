@@ -7,6 +7,9 @@ exports[`records create issue 1`] = `
   \\"ID\\": 4384,
   \\"Open\\": true,
   \\"URL\\": \\"https://github.com/devtools-html/debugger.html/issues/4384\\",
+  \\"Assignees\\": [
+    \\"belld19233\\"
+  ],
   \\"Description\\": \\"Ignore this bug. Instead of making comments on bugs in progress, I will do so here in order to debug the issue of Probot not detecting some /claim comments.\\\\r\\\\n\\\\r\\\\nAlso, this will test our Probot's ability to assign users to a bug.\\",
   \\"Labels\\": [
     \\"in progress\\"
@@ -40,23 +43,4 @@ exports[`records create pr 1`] = `
 }"
 `;
 
-exports[`records update issue 1`] = `
-"create
-{
-  \\"Title\\": \\"Debugging Probot\\",
-  \\"ID\\": 4384,
-  \\"Open\\": true,
-  \\"URL\\": \\"https://github.com/devtools-html/debugger.html/issues/4384\\",
-  \\"Description\\": \\"Ignore this bug. Instead of making comments on bugs in progress, I will do so here in order to debug the issue of Probot not detecting some /claim comments.\\\\r\\\\n\\\\r\\\\nAlso, this will test our Probot's ability to assign users to a bug.\\",
-  \\"Labels\\": [
-    \\"in progress\\"
-  ],
-  \\"Author\\": \\"belld19233\\",
-  \\"Created\\": \\"10/16/2017\\",
-  \\"Updated\\": \\"10/20/2017\\",
-  \\"Closed\\": null
-}
-
-get
-4384"
-`;
+exports[`records update issue 1`] = `""`;

@@ -7,11 +7,13 @@
     "dedent": "^0.7.0",
     "github": "^11.0.0",
     "jest": "^21.2.1",
+    "jest-in-case": "^1.0.2",
     "lodash": "^4.17.4",
     "node-github": "^0.0.3",
     "octokit": "^0.10.4",
     "octonode": "^0.9.1",
-    "ordinal": "^1.0.2"
+    "ordinal": "^1.0.2",
+    "probot": "^3.0.1"
   },
   "files": [
     "src"
