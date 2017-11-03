@@ -1,19 +1,26 @@
-const { records } = require("../../airtable");
+const { records } = require("../airtable");
+const { authenticate } = require("../airtable");
 
-const github = require("../github").authenticate();
-const airtable = require("../airtable").authenticate();
-
-function updatePR(robot, context) {
-  records.update(github, airtable, "Pulls", context.payload.pr);
+async function updatePR(robot, context) {
+  const config = await context.config("airtable-crm.yml", {
+    base: "appwQO7nufXMVj4ge"
+  });
+  const airtable = authenticate(config.base);
+  records.update(airtable, context.github, "Pulls", context.payload.pr);
 }
 
 function updateIssue(robot, context) {
-  records.update(github, airtable, "Issues", context.payload.issue);
+  const config = await context.config("airtable-crm.yml", {
+    base: "appwQO7nufXMVj4ge"
+  });
+  const airtable = authenticate(config.base);
+  records.update(airtable, context.github, "Issues", context.payload.issue);
 }
 
 function probotPlugin(robot) {
+  console.log("Starting");
   robot.on("pull_request", context => updatePR(robot, context));
-  robot.on("issue", context => updateIssue(robot, context));
+  robot.on("issues", context => updateIssue(robot, context));
 }
 
 process.on("unhandledRejection", (reason, p) => {
