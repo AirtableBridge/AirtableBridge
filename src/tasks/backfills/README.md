@@ -8,5 +8,5 @@ The goal of these scripts is to get all the Github records:
 Example
 
 ```
-repo=debugger.html owner=devtools-html node src/tasks/backfills/issues
+DEBUG=devtools-bot repo=debugger.html owner=devtools-html node src/tasks/backfills/issues
 ```
