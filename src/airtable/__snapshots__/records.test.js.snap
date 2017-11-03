@@ -5,6 +5,9 @@ exports[`records create issue 1`] = `
 {
   \\"Title\\": \\"Debugging Probot\\",
   \\"ID\\": 4384,
+  \\"Number\\": 4384,
+  \\"Repository\\": \\"debugger.html\\",
+  \\"Org\\": \\"devtools-html\\",
   \\"Open\\": true,
   \\"URL\\": \\"https://github.com/devtools-html/debugger.html/issues/4384\\",
   \\"Assignees\\": [

@@ -13,19 +13,21 @@ function getAvatar(user) {
 
 function mapIssue(payload) {
   const {
-    title,
-    number,
-    id,
-    state,
-    repository,
-    html_url,
-    labels,
-    created_at,
-    updated_at,
-    closed_at,
-    user,
-    body,
-    assignees
+    issue: {
+      title,
+      number,
+      id,
+      state,
+      html_url,
+      labels,
+      created_at,
+      updated_at,
+      closed_at,
+      user,
+      body,
+      assignees
+    },
+    repository
   } = payload;
   const labelNames = labels.map(label => label.name);
   const author = user.login;

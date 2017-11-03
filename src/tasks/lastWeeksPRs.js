@@ -100,7 +100,7 @@ function getHeader(prs) {
   const authors = getAuthors(prs).map(author => `[@${author}]`);
   const today = new Date();
   return dedent`
-    ## ${dateNames.months[today.getMonth()]} ${ordinal(today.getDate())}
+    ## <Title>
 
     ...
 

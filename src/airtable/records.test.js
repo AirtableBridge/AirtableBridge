@@ -35,7 +35,7 @@ function createMock() {
 describe("records", () => {
   it("create issue", async () => {
     const { airtable, mocks } = createMock();
-    await records.create(airtable, "Issues", getFix("issue").issue);
+    await records.create(airtable, "Issues", getFix("issue"));
 
     // console.log(formatCalls(mocks));
     expect(formatCalls(mocks)).toMatchSnapshot();
