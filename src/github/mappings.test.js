@@ -10,7 +10,7 @@ function snap(data) {
 }
 
 describe("mappings", () => {
-  it("issue", () => snap(mapIssue(fixture("issue").issue)));
+  it("issue", () => snap(mapIssue(fixture("issue"))));
   it("commit", () => snap(mapCommit(fixture("commit"))));
   it("user", () => snap(mapUser(fixture("user"))));
   it("pr", () => snap(mapPR(fixture("pr"))));

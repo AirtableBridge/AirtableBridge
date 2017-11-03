@@ -2,19 +2,15 @@ const { records } = require("../airtable");
 const { authenticate } = require("../airtable");
 
 async function updatePR(robot, context) {
-  const config = await context.config("airtable-crm.yml", {
-    base: "appwQO7nufXMVj4ge"
-  });
+  const config = await context.config("airtable-crm.yml");
   const airtable = authenticate(config.base);
-  records.update(airtable, context.github, "Pulls", context.payload.pr);
+  records.update(airtable, context.github, "Pulls", context.payload);
 }
 
 function updateIssue(robot, context) {
-  const config = await context.config("airtable-crm.yml", {
-    base: "appwQO7nufXMVj4ge"
-  });
+  const config = await context.config("airtable-crm.yml");
   const airtable = authenticate(config.base);
-  records.update(airtable, context.github, "Issues", context.payload.issue);
+  records.update(airtable, context.github, "Issues", context.payload);
 }
 
 function probotPlugin(robot) {
