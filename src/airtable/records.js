@@ -61,7 +61,7 @@ async function update(airtable, github, table, payload) {
     if (data.Assignees) {
       let assigneeIds = [];
       const assignees = data.Assignees;
-      for (assignee of assignees) {
+      for (const assignee of assignees) {
         const assigneeId = await getUserId(airtable, github, assignee);
         assigneeIds.push(assigneeId);
       }

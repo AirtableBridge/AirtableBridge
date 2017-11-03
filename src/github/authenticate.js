@@ -1,4 +1,4 @@
-const keys = require("../../keys.json");
+const env = require("dotenv").config();
 const GitHubApi = require("github");
 
 module.exports = function() {
@@ -6,7 +6,7 @@ module.exports = function() {
 
   github.authenticate({
     type: "token",
-    token: keys.github
+    token: env.GITHUB_TOKEN
   });
 
   return github;

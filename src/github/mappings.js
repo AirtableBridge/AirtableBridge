@@ -15,7 +15,9 @@ function mapIssue(payload) {
   const {
     title,
     number,
+    id,
     state,
+    repository,
     html_url,
     labels,
     created_at,
@@ -32,6 +34,9 @@ function mapIssue(payload) {
   return {
     Title: title,
     ID: number,
+    Number: number,
+    Repository: repository.name,
+    Org: repository.owner.login,
     Open: state == "open",
     URL: html_url,
     Assignees,

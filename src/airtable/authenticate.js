@@ -1,11 +1,12 @@
-const keys = require("../../keys.json");
+const env = require("dotenv").config();
 var Airtable = require("airtable");
 
-module.exports = function() {
+module.exports = function(base) {
+  base = base || env.AIRTABLE_BASE;
   Airtable.configure({
     endpointUrl: "https://api.airtable.com",
-    apiKey: keys.airtable
+    apiKey: env.AIRTABLE_TOKEN
   });
 
-  return Airtable.base("appwQO7nufXMVj4ge");
+  return Airtable.base(base);
 };
