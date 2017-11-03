@@ -1,6 +1,6 @@
 {
   "name": "github-airtable-bridge",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "test": "jest src"
   },
@@ -20,6 +20,7 @@
 
   "files": ["src", "yarn.lock"],
   "main": "index.js",
+  "license": "MIT",
   "jest": {
     "rootDir": "src",
     "setupFiles": ["<rootDir>/tests/setup.js"]
