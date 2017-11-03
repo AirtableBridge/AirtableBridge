@@ -26,7 +26,7 @@ async function search(options, name, searchFn) {
     }
   } while (items.data && items.data.length > 0);
 
-  cache.write("name", results);
+  cache.write(name, results);
   return results;
 }
 

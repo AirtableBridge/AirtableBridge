@@ -22,8 +22,8 @@ async function getCommits() {
   for (var page = 1; page < 46; page++) {
     console.log(page);
     const commits = await github.repos.getCommits({
-      owner: "devtools-html",
-      repo: "debugger.html",
+      owner: process.env.owner,
+      repo: process.env.repo,
       per_page: 100,
       page
     });

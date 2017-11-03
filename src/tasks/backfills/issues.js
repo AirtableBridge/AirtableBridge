@@ -11,8 +11,8 @@ const github = authenticate();
 async function getIssues() {
   return search({ cache: true }, "issues", page =>
     github.issues.getForRepo({
-      owner: "devtools-html",
-      repo: "debugger.html",
+      owner: process.env.owner,
+      repo: process.env.repo,
       per_page: 100,
       state: "all",
       page

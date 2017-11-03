@@ -17,8 +17,8 @@ function readPRs() {
 async function getPRs() {
   return search({ cache: true }, "Prs", page =>
     github.pullRequests.getAll({
-      owner: "devtools-html",
-      repo: "debugger.html",
+      owner: process.env.owner,
+      repo: process.env.repo,
       per_page: 100,
       state: "all",
       page

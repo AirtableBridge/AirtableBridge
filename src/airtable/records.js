@@ -81,7 +81,7 @@ async function update(airtable, github, table, payload) {
 
     return record;
   } catch (e) {
-    debug(`Failed to update ${table} record ${data && data.ID} - ${e.message}`);
+    debug(`Failed to update ${table} record ${data && data.ID} - ${e.stack}`);
     return null;
   }
 }
