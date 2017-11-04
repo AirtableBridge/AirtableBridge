@@ -2,7 +2,7 @@ const _ = require("lodash");
 const { authenticate, query } = require("../airtable");
 const airtable = authenticate();
 const dedent = require("dedent");
-const { getScreenshotsForPR } = require("../github/getPRScreenshots");
+// const { getScreenshotsForPR } = require("../github/getPRScreenshots");
 const cache = require("../utils/cache");
 const ordinal = require("ordinal");
 const dateNames = require("date-names");
@@ -111,7 +111,7 @@ function getHeader(prs) {
 async function mapPRs(prs) {
   return Promise.all(
     prs.map(async pr => {
-      const attachments = await getScreenshotsForPR(pr.ID);
+      const attachments = []; //await getScreenshotsForPR(pr.ID);
       const author = await getAuthor(pr.Author[0]);
       return {
         ...pr,
@@ -134,16 +134,14 @@ function post(prs) {
 
   return text;
 }
-//
-// process.on("unhandledRejection", (reason, p) => {
-//   console.log(reason);
-// });
 
-// (async () => {
-//   let prs = await getPRs();
-//   // console.log(prs[0]);
-//   // console.log(prs.map(pr => pr.attachments.length));
-//   console.log(post(prs));
-// })();
+(async () => {
+  process.on("unhandledRejection", (reason, p) => console.log(reason));
+
+  let prs = await getPRs({ cache: true });
+  console.log(prs[0]);
+  // console.log(prs.map(pr => pr.attachments.length));
+  // console.log(post(prs));
+})();
 
 module.exports = { post, getPRs };

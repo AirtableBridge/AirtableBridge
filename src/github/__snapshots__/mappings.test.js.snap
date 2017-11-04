@@ -4,7 +4,7 @@ exports[`mappings commit 1`] = `
 Object {
   "Author": "tohmjudson",
   "Committer": "jasonLaster",
-  "Date": "10/21/2017",
+  "Date": "2017-10-22",
   "Message": "Blackboxed sources distinguished by icon in source tree  (#4441)",
   "Sha": "1ded1939f224265a585c020f4b7c608b14dc0af7",
   "Url": "https://github.com/devtools-html/debugger.html/commit/1ded1939f224265a585c020f4b7c608b14dc0af7",
@@ -18,7 +18,7 @@ Object {
   ],
   "Author": "belld19233",
   "Closed": null,
-  "Created": "10/16/2017",
+  "Created": "2017-10-16",
   "Description": "Ignore this bug. Instead of making comments on bugs in progress, I will do so here in order to debug the issue of Probot not detecting some /claim comments.
 
 Also, this will test our Probot's ability to assign users to a bug.",
@@ -32,7 +32,7 @@ Also, this will test our Probot's ability to assign users to a bug.",
   "Repository": "debugger.html",
   "Title": "Debugging Probot",
   "URL": "https://github.com/devtools-html/debugger.html/issues/4384",
-  "Updated": "10/20/2017",
+  "Updated": "2017-10-20",
 }
 `;
 
@@ -46,7 +46,7 @@ Object {
   ],
   "Branch": "GarethSharpe:master",
   "Closed": null,
-  "Created": "10/23/2017",
+  "Created": "2017-10-24",
   "Description": "Associated Issue: #4410 
 
 ### Summary of Changes
@@ -70,7 +70,7 @@ TODO:
   "Merged": null,
   "Open": true,
   "Title": "Setup breakpoint dropdown",
-  "Updated": "10/23/2017",
+  "Updated": "2017-10-24",
   "Url": "https://github.com/devtools-html/debugger.html/pull/4478",
 }
 `;

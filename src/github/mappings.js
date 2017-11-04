@@ -3,8 +3,9 @@ function formatDate(date) {
     return null;
   }
 
-  const d = new Date(date);
-  return `${d.getMonth() + 1}/${d.getDate()}/${d.getUTCFullYear()}`;
+  // const d = new Date(date);
+  //`${d.getMonth() + 1}/${d.getDate()}/${d.getUTCFullYear()}`;
+  return date.substr(0, 10);
 }
 
 function getAvatar(user) {

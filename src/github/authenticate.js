@@ -6,7 +6,7 @@ module.exports = function() {
 
   github.authenticate({
     type: "token",
-    token: env.parsed.GITHUB_TOKEN
+    token: env && env.parsed && env.parsed.GITHUB_TOKEN
   });
 
   return github;
