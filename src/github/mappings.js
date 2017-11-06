@@ -14,7 +14,7 @@ function getAvatar(user) {
 
 function mapIssue(payload) {
   const {
-    // issue: {
+    issue: {
       title,
       number,
       id,
@@ -26,8 +26,8 @@ function mapIssue(payload) {
       closed_at,
       user,
       body,
-      assignees,
-    // },
+      assignees
+    },
     repository
   } = payload;
   const labelNames = labels.map(label => label.name);
@@ -37,9 +37,6 @@ function mapIssue(payload) {
   return {
     Title: title,
     ID: number,
-    // Number: number,
-    // Repository: repository.name,
-    // Org: repository.owner.login,
     Open: state == "open",
     URL: html_url,
     Assignees,

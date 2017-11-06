@@ -23,13 +23,11 @@ Object {
 
 Also, this will test our Probot's ability to assign users to a bug.",
   "ID": 4384,
+  "IsPR": false,
   "Labels": Array [
     "in progress",
   ],
-  "Number": 4384,
   "Open": true,
-  "Org": "devtools-html",
-  "Repository": "debugger.html",
   "Title": "Debugging Probot",
   "URL": "https://github.com/devtools-html/debugger.html/issues/4384",
   "Updated": "2017-10-20",

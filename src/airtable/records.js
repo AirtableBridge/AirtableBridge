@@ -1,5 +1,31 @@
 const { mappings } = require("../github");
 const debug = require("debug")("devtools-bot");
+const hankey = require("hankey");
+
+async function removeDupes(airtable, table) {
+  hankey.action(":gun: Removing duplicates");
+
+  const records = await airtable(table)
+    .select({
+      view: table
+    })
+    .all();
+
+  let ids = [];
+  for (record of records) {
+    const id = record._rawJson.fields.ID;
+    if (ids.includes(id)) {
+      try {
+        await record.destroy();
+        hankey.action(`:skull: Destroyed ${table} ${id}`);
+      } catch (e) {
+        debug(`Failed to destroy ${table} ${JSON.stringify(record._rawJson)}`);
+      }
+    } else {
+      ids.push(id);
+    }
+  }
+}
 
 async function get(airtable, table, ID) {
   try {
@@ -48,42 +74,92 @@ async function getUserId(airtable, github, login) {
   }
 }
 
+async function getUserIDs(airtable, github, users) {
+  let userIds = [];
+  for (const user of users) {
+    const userId = await getUserId(airtable, github, user);
+    userIds.push(userId);
+  }
+  return userIds.length > 0 ? userIds : null;
+}
+
+let failedRecords = [];
+
+async function updateRecords(airtable, github, table, payloads) {
+  let failedRecords = [];
+  let failureReasons = [];
+
+  await removeDupes(airtable, table);
+
+  for (payload of payloads) {
+    const response = await update(airtable, github, table, payload);
+    if (response) {
+      const { id, message } = response;
+      failedRecords.push(id);
+      if (failureReasons.filter(fmessage => fmessage == message).length == 0)
+        failureReasons.push(message);
+    }
+  }
+
+  debug(`Failed Records ${JSON.stringify(failedRecords)}`);
+  debug(`Failure Reasons: ${JSON.stringify(failureReasons)}`);
+}
+
+function shouldIgnore(table, payload) {
+  if (table == "Issues") {
+    if (payload.issue.pull_request) {
+      debug(
+        `Skipping ${table} ${payload.issue.number} because it is a pull request`
+      );
+      return true;
+    }
+  }
+
+  return;
+}
+
 async function update(airtable, github, table, payload) {
   let record;
   let data;
   try {
+    if (shouldIgnore(table, payload)) {
+      debug(`Skipping ${table} ${JSON.stringify(payload)}`);
+      return;
+    }
+
     data = mappings.mapPayload(table, payload);
+    if (data.isPR) {
+      return;
+    }
     if (data.Author) {
       const authorId = await getUserId(airtable, github, data.Author);
       data.Author = [authorId];
     }
 
     if (data.Assignees) {
-      let assigneeIds = [];
-      const assignees = data.Assignees;
-      for (const assignee of assignees) {
-        const assigneeId = await getUserId(airtable, github, assignee);
-        assigneeIds.push(assigneeId);
-      }
-      data.Assignees = assigneeIds.length > 0 ? assigneeIds : null;
+      data.Assignees = await getUserIDs(airtable, github, data.Assignees);
     }
 
     const recordId = await get(airtable, table, data.ID);
 
     if (recordId) {
-      debug(`Updating ${table} record ${data.ID}`);
+      debug(`Updating ${table} record ${data.ID} ${data.Title}`);
       record = await airtable(table).update(recordId, data);
-      return record;
     } else {
-      debug(`Creating ${table} record ${data.ID}`);
+      debug(`Creating ${table} record ${data.ID} ${data.Title}`);
       record = await airtable(table).create(data);
     }
 
-    return record;
-  } catch (e) {
-    debug(`Failed to update ${table} record ${data && data.ID} - ${e.stack}`);
     return null;
+  } catch (e) {
+    debug(
+      `Failed to update ${table} record ${data &&
+        data.ID} -  ${e.message} ${e.stack}`
+    );
+    return { id: data.ID, message: e.message };
   }
+
+  return null;
 }
 
 async function create(airtable, table, payload) {
@@ -99,4 +175,4 @@ async function create(airtable, table, payload) {
   }
 }
 
-module.exports = { create, update, get, getUserId };
+module.exports = { create, update, get, getUserId, updateRecords };
