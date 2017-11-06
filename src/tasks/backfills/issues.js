@@ -9,10 +9,15 @@ const airtable = authenticateAirtable();
 const github = authenticate();
 
 async function getIssues() {
+  const { owner, repo } = process.env;
+  if (!owner || !repo) {
+    throw new Error(`Missing owner ${owner}, repo ${repo}`);
+  }
+
   return search({ cache: true }, "issues", page =>
     github.issues.getForRepo({
-      owner: process.env.owner,
-      repo: process.env.repo,
+      owner,
+      repo,
       per_page: 100,
       state: "all",
       page
@@ -20,15 +25,10 @@ async function getIssues() {
   );
 }
 
-async function updateIssues(issues) {
-  for (issue of issues) {
-    await records.update(airtable, github, "Issues", issue);
-  }
-}
-
 (async () => {
   const issues = await getIssues();
-  await updateIssues(issues);
+  const payloads = issues.map(issue => ({ issue }));
+  await records.updateRecords(airtable, github, "Issues", payloads);
 })();
 
 process.on("unhandledRejection", (reason, p) => {

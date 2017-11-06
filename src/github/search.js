@@ -20,11 +20,11 @@ async function search(options, name, searchFn) {
         results = results.concat(items.data);
       }
     } catch (e) {
-      debug(`Failed to fetch page ${page}`);
+      debug(`Failed to fetch page ${page} ${e.message}`);
     } finally {
       page++;
     }
-  } while (items.data && items.data.length > 0);
+  } while (items && items.data && items.data.length > 0);
 
   cache.write(name, results);
   return results;
